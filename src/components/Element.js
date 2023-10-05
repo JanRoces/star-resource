@@ -4,16 +4,26 @@ function Element({
   atomicNumber,
   atomicSymbol,
   atomicWeight,
+  backgroundColor,
   hideBorderRight,
+  hideBorderBottom,
 }) {
   const borderRight = hideBorderRight ? "none" : "";
+  const borderBottom = hideBorderBottom ? "none" : "";
 
   function renderNumber(number) {
-    return number ? <div className="atomic-number">{number}</div> : "";
+    return number ? <div className="number">{number}</div> : "";
   }
 
   return (
-    <div className="box" style={{ borderRight: borderRight }}>
+    <div
+      className="box"
+      style={{
+        backgroundColor: backgroundColor,
+        borderRight: borderRight,
+        borderBottom: borderBottom,
+      }}
+    >
       {renderNumber(atomicNumber)}
       <div className="atomic-symbol">{atomicSymbol}</div>
       {renderNumber(atomicWeight)}
