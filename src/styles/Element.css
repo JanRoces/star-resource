@@ -1,0 +1,21 @@
+.atomic-number {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.atomic-symbol {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box {
+  align-items: center;  
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75px;
+  
+}
