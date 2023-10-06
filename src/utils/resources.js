@@ -116,8 +116,8 @@ export const RESOURCE = {
     backgroundColor: "#3A7B9B",
     id: "00005586",
   },
-  CLORINE: {
-    name: "clorine",
+  CHLORINE: {
+    name: "chlorine",
     symbol: "Cl",
     type: TYPE.GAS,
     rarity: RARITY.COMMON,
@@ -246,7 +246,7 @@ export const RESOURCE = {
   },
   NEODYMIUM: {
     name: "neodymium",
-    symbol: "Hd",
+    symbol: "Nd",
     type: TYPE.SOLID,
     rarity: RARITY.RARE,
     backgroundColor: "#6A9C9A",
