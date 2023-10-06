@@ -747,4 +747,4 @@ const LEVEL_1_SYSTEMS = [
   },
 ];
 
-export const SYSTEMS = [...LEVEL_1_SYSTEMS];
+export const STAR_SYSTEMS = [...LEVEL_1_SYSTEMS];
