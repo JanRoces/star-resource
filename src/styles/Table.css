@@ -1,3 +1,9 @@
+.column-container {
+  color: #ADD8E6;
+  display: flex;
+  flex: 1;
+}
+
 .header-container {
   background-color: #202F4D;
   color: #FFFFFF;
@@ -13,6 +19,12 @@
   display: flex;
 }
 
+.row-container {
+  border-top: 1px solid #FFFFFF;
+  display: flex;
+  padding: 5px 10px;
+}
+
 .table-container {
-  margin: 20px 20px 0;
+  margin: 20px 20px;
 }
