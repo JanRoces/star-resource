@@ -1,5 +1,6 @@
 import "../styles/Table.css";
 import { STAR_SYSTEMS } from "../utils/systems";
+import Resource from "./Resource";
 
 function formatName(str) {
   return str.replace(/\w\S*/g, (txt) => {
@@ -108,16 +109,13 @@ function Table() {
     resources,
     alternateColor,
   }) {
-    const resourcesSymbols = resources.map((r) => r.symbol);
-    const symbolList = resourcesSymbols.join(", ");
-
-    const color = alternateColor ? "#2E4A76" : "#486389";
+    const rowColor = alternateColor ? "#2E4A76" : "#486389";
 
     return (
       <div
         className="row-container"
         key={systemName + "-" + planetName}
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: rowColor }}
       >
         <div className="column-container">
           <span>{level}</span>
@@ -135,10 +133,20 @@ function Table() {
           <span>{formatName(mainPlanet)}</span>
         </div>
         <div className="column-container" style={{ flex: 3 }}>
-          <span>{symbolList}</span>
+          <span>{renderResourceList(resources)}</span>
         </div>
       </div>
     );
+  }
+
+  function renderResourceList(resources) {
+    const resourceList = [];
+
+    resources.forEach((resource) => {
+      resourceList.push(<Resource key={resource.name} {...resource} />);
+    });
+
+    return <div className="resource-list-container">{resourceList}</div>;
   }
 
   return (

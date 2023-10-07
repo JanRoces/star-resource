@@ -19,6 +19,12 @@
   display: flex;
 }
 
+.resource-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .row-container {
   border-top: 1px solid #FFFFFF;
   display: flex;

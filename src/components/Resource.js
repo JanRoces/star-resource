@@ -1,6 +1,6 @@
 import "../styles/Resource.css";
 
-function Resource({ symbol, rarity, backgroundColor, size }) {
+function Resource({ symbol, rarity, backgroundColor }) {
   function renderRarityIcon() {
     const color = rarity.color || backgroundColor;
 
