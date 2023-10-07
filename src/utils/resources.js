@@ -405,3 +405,37 @@ export const RESOURCE = {
     id: "00005571",
   },
 };
+
+const COMMON_RESOURCES = [];
+const UNCOMMON_RESOURCES = [];
+const RARE_RESOURCES = [];
+const EXOTIC_RESOURCES = [];
+const UNIQUE_RESOURCES = [];
+
+Object.values(RESOURCE).forEach((resource) => {
+  switch (resource.rarity) {
+    case RARITY.UNIQUE:
+      UNIQUE_RESOURCES.push(resource);
+      break;
+    case RARITY.EXOTIC:
+      EXOTIC_RESOURCES.push(resource);
+      break;
+    case RARITY.RARE:
+      RARE_RESOURCES.push(resource);
+      break;
+    case RARITY.UNCOMMON:
+      UNCOMMON_RESOURCES.push(resource);
+      break;
+    default:
+      COMMON_RESOURCES.push(resource);
+      break;
+  }
+});
+
+export {
+  COMMON_RESOURCES,
+  UNCOMMON_RESOURCES,
+  RARE_RESOURCES,
+  EXOTIC_RESOURCES,
+  UNIQUE_RESOURCES,
+};
