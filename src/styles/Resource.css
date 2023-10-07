@@ -1,0 +1,25 @@
+.dot {
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+}
+
+.rarity {
+  display: flex;
+  justify-content: end;
+}
+
+.resource-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20px;
+  padding: 5px;
+}
+
+.symbol {
+  color: #FFFFFF;
+  display: flex;
+  font-weight: bold;
+  font-size: 10px;
+}
