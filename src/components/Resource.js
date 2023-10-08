@@ -10,6 +10,14 @@ function Resource({
 }) {
   const id = selectable ? name : "";
 
+  function clickResource() {
+    if (!selectable) {
+      return;
+    }
+
+    onSelectResource(name);
+  }
+
   function renderRarityIcon() {
     const color = rarity.color || backgroundColor;
 
@@ -28,7 +36,7 @@ function Resource({
       id={id}
       className="resource-container"
       style={{ backgroundColor: backgroundColor }}
-      onClick={() => onSelectResource(name)}
+      onClick={() => clickResource(name)}
     >
       <div className="rarity">{renderRarityIcon()}</div>
       <div className="symbol">{symbol}</div>
