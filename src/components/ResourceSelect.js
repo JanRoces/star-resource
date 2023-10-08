@@ -7,8 +7,10 @@ import {
   UNIQUE_RESOURCES,
 } from "../utils/resources";
 import Resource from "./Resource";
+import { useState } from "react";
 
 function ResourceSelect() {
+  const [filter, setResourceFilter] = useState([]);
   const resourceGroups = [
     {
       name: "row 1",
@@ -47,11 +49,36 @@ function ResourceSelect() {
     },
   ];
 
+  function addResource(name) {
+    setResourceFilter([...filter, name]);
+  }
+
+  function removeResource(name) {
+    const filterClone = [...filter];
+    const resourceIndex = filterClone.indexOf(name);
+
+    filterClone.splice(resourceIndex, 1);
+
+    setResourceFilter(filterClone);
+  }
+
+  function selectResource(name) {
+    return filter.includes(name) ? removeResource(name) : addResource(name);
+  }
+
   function renderResources(resources) {
     const items = [];
 
     resources.forEach((resource) => {
-      items.push(<Resource key={resource.name} {...resource} />);
+      const props = { ...resource, selectable: true };
+
+      items.push(
+        <Resource
+          key={resource.name}
+          onSelectResource={selectResource}
+          {...props}
+        />
+      );
     });
 
     return items;

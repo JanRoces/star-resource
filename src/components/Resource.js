@@ -1,6 +1,15 @@
 import "../styles/Resource.css";
 
-function Resource({ symbol, rarity, backgroundColor }) {
+function Resource({
+  backgroundColor,
+  name,
+  rarity,
+  selectable,
+  symbol,
+  onSelectResource,
+}) {
+  const id = selectable ? name : "";
+
   function renderRarityIcon() {
     const color = rarity.color || backgroundColor;
 
@@ -15,14 +24,14 @@ function Resource({ symbol, rarity, backgroundColor }) {
   }
 
   return (
-    <div>
-      <div
-        className="resource-container"
-        style={{ backgroundColor: backgroundColor }}
-      >
-        <div className="rarity">{renderRarityIcon()}</div>
-        <div className="symbol">{symbol}</div>
-      </div>
+    <div
+      id={id}
+      className="resource-container"
+      style={{ backgroundColor: backgroundColor }}
+      onClick={() => onSelectResource(name)}
+    >
+      <div className="rarity">{renderRarityIcon()}</div>
+      <div className="symbol">{symbol}</div>
     </div>
   );
 }
