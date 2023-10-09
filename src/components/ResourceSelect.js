@@ -2,12 +2,13 @@ import "../styles/ResourceSelect.css";
 import {
   COMMON_RESOURCES,
   EXOTIC_RESOURCES,
+  LEVELS,
   RARE_RESOURCES,
   UNCOMMON_RESOURCES,
   UNIQUE_RESOURCES,
 } from "../utils/resources";
 import Resource from "./Resource";
-import { useState } from "react";
+import Number from "./Number";
 
 function ResourceSelect({ filter, setResourceFilter }) {
   const resourceGroups = [
@@ -44,6 +45,10 @@ function ResourceSelect({ filter, setResourceFilter }) {
           title: "Unique",
           resources: UNIQUE_RESOURCES,
         },
+        {
+          title: "Levels",
+          resources: LEVELS,
+        },
       ],
     },
   ];
@@ -65,20 +70,23 @@ function ResourceSelect({ filter, setResourceFilter }) {
     return filter.includes(name) ? removeResource(name) : addResource(name);
   }
 
-  function renderResources(resources) {
-    const items = [];
+  function renderResources({ title, resources }) {
+    const items =
+      title === "Levels"
+        ? resources.map((level) => {
+            return <Number key={level.digit} {...level} />;
+          })
+        : resources.map((resource) => {
+            const props = { ...resource, selectable: true };
 
-    resources.forEach((resource) => {
-      const props = { ...resource, selectable: true };
-
-      items.push(
-        <Resource
-          key={resource.name}
-          onSelectResource={selectResource}
-          {...props}
-        />
-      );
-    });
+            return (
+              <Resource
+                key={resource.name}
+                onSelectResource={selectResource}
+                {...props}
+              />
+            );
+          });
 
     return items;
   }
@@ -90,9 +98,7 @@ function ResourceSelect({ filter, setResourceFilter }) {
       row.push(
         <div className="group" key={group.title}>
           <div className="title">{group.title}</div>
-          <div className="resource-group">
-            {renderResources(group.resources)}
-          </div>
+          <div className="resource-group">{renderResources(group)}</div>
         </div>
       );
     });

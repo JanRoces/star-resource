@@ -1,3 +1,70 @@
+export const LEVELS = [
+  {
+    digit: "1",
+    color: "#119999",
+  },
+  {
+    digit: "5",
+    color: "#119999",
+  },
+  {
+    digit: "10",
+    color: "#119999",
+  },
+  {
+    digit: "15",
+    color: "#00FB00",
+  },
+  {
+    digit: "20",
+    color: "#00FB00",
+  },
+  {
+    digit: "25",
+    color: "#FFFF00",
+  },
+  {
+    digit: "30",
+    color: "#FFFF00",
+  },
+  {
+    digit: "35",
+    color: "#FB9400",
+  },
+  {
+    digit: "40",
+    color: "#FB9400",
+  },
+  {
+    digit: "45",
+    color: "#FB9400",
+  },
+  {
+    digit: "50",
+    color: "#FB9400",
+  },
+  {
+    digit: "55",
+    color: "#FC0623",
+  },
+  {
+    digit: "60",
+    color: "#FC0623",
+  },
+  {
+    digit: "65",
+    color: "#FC0623",
+  },
+  {
+    digit: "70",
+    color: "#FC0623",
+  },
+  {
+    digit: "75",
+    color: "#FC0623",
+  },
+];
+
 const TYPE = {
   GAS: "gas",
   LIQUID: "liquid",
