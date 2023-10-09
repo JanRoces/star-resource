@@ -33,6 +33,11 @@ function Table({ filter }) {
     },
   ];
 
+  const planetType = {
+    moon: "Moon",
+    planet: "Planet",
+  };
+
   function formatName(str) {
     return str.replace(/\w\S*/g, (txt) => {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
@@ -108,12 +113,7 @@ function Table({ filter }) {
     );
   }
 
-  function renderRows() {
-    const planetType = {
-      moon: "Moon",
-      planet: "Planet",
-    };
-
+  function renderFilteredRows() {
     const rows = STAR_SYSTEMS.flatMap((system) => {
       return system.planets.flatMap((planet) => {
         const planetRow = planet.resources.some((resource) =>
@@ -155,10 +155,42 @@ function Table({ filter }) {
     return rows.filter((row) => row !== null);
   }
 
+  function renderAllRows() {
+    const rows = STAR_SYSTEMS.flatMap((system) => {
+      return system.planets.flatMap((planet) => {
+        const planetRow = renderRow({
+          level: system.level,
+          systemName: system.name,
+          planetName: planet.name,
+          type: planetType.planet,
+          mainPlanet: "",
+          resources: planet.resources,
+          alternateColor: alternate,
+        });
+
+        const moonRows = planet.moons.map((moon) => {
+          return renderRow({
+            level: system.level,
+            systemName: system.name,
+            planetName: moon.name,
+            type: planetType.moon,
+            mainPlanet: planet.name,
+            resources: moon.resources,
+            alternateColor: alternate,
+          });
+        });
+
+        return [planetRow, ...moonRows];
+      });
+    });
+
+    return rows;
+  }
+
   return (
     <div className="table-container">
       {renderHeader()}
-      {renderRows()}
+      {filter.length ? renderFilteredRows() : renderAllRows()}
     </div>
   );
 }
