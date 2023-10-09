@@ -9,8 +9,7 @@ import {
 import Resource from "./Resource";
 import { useState } from "react";
 
-function ResourceSelect() {
-  const [filter, setResourceFilter] = useState([]);
+function ResourceSelect({ filter, setResourceFilter }) {
   const resourceGroups = [
     {
       name: "row 1",

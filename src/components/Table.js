@@ -1,14 +1,11 @@
+import { useState } from "react";
 import "../styles/Table.css";
 import { STAR_SYSTEMS } from "../utils/systems";
 import Resource from "./Resource";
 
-function formatName(str) {
-  return str.replace(/\w\S*/g, (txt) => {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
-}
+function Table({ filter }) {
+  let alternate = true;
 
-function Table() {
   const headerConfig = [
     {
       label: "level",
@@ -36,6 +33,12 @@ function Table() {
     },
   ];
 
+  function formatName(str) {
+    return str.replace(/\w\S*/g, (txt) => {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  }
+
   function renderHeader() {
     const headerLabels = [];
 
@@ -54,50 +57,14 @@ function Table() {
     return <div className="header-container">{headerLabels}</div>;
   }
 
-  function renderRows() {
-    const planetType = {
-      moon: "Moon",
-      planet: "Planet",
-    };
+  function renderResourceList(resources) {
+    const resourceList = [];
 
-    const rows = [];
-
-    let alternate = true;
-
-    STAR_SYSTEMS.forEach((system) => {
-      system.planets.forEach((planet) => {
-        alternate = !alternate;
-
-        rows.push(
-          renderRow({
-            level: system.level,
-            systemName: system.name,
-            planetName: planet.name,
-            type: planetType.planet,
-            mainPlanet: "",
-            resources: planet.resources,
-            alternateColor: alternate,
-          })
-        );
-        planet.moons.forEach((moon) => {
-          alternate = !alternate;
-
-          rows.push(
-            renderRow({
-              level: system.level,
-              systemName: system.name,
-              planetName: moon.name,
-              type: planetType.moon,
-              mainPlanet: planet.name,
-              resources: moon.resources,
-              alternateColor: alternate,
-            })
-          );
-        });
-      });
+    resources.forEach((resource) => {
+      resourceList.push(<Resource key={resource.name} {...resource} />);
     });
 
-    return rows;
+    return <div className="resource-list-container">{resourceList}</div>;
   }
 
   function renderRow({
@@ -110,6 +77,8 @@ function Table() {
     alternateColor,
   }) {
     const rowColor = alternateColor ? "#2E4A76" : "#486389";
+
+    alternate = !alternate;
 
     return (
       <div
@@ -139,14 +108,51 @@ function Table() {
     );
   }
 
-  function renderResourceList(resources) {
-    const resourceList = [];
+  function renderRows() {
+    const planetType = {
+      moon: "Moon",
+      planet: "Planet",
+    };
 
-    resources.forEach((resource) => {
-      resourceList.push(<Resource key={resource.name} {...resource} />);
+    const rows = STAR_SYSTEMS.flatMap((system) => {
+      return system.planets.flatMap((planet) => {
+        const planetRow = planet.resources.some((resource) =>
+          filter.includes(resource.name)
+        )
+          ? renderRow({
+              level: system.level,
+              systemName: system.name,
+              planetName: planet.name,
+              type: planetType.planet,
+              mainPlanet: "",
+              resources: planet.resources,
+              alternateColor: alternate,
+            })
+          : null;
+
+        const moonRows = planet.moons
+          .filter((moon) =>
+            moon.resources.some((resource) => filter.includes(resource.name))
+          )
+          .map((moon) => {
+            // alternate = !alternate;
+
+            return renderRow({
+              level: system.level,
+              systemName: system.name,
+              planetName: moon.name,
+              type: planetType.moon,
+              mainPlanet: planet.name,
+              resources: moon.resources,
+              alternateColor: alternate,
+            });
+          });
+
+        return [planetRow, ...moonRows];
+      });
     });
 
-    return <div className="resource-list-container">{resourceList}</div>;
+    return rows.filter((row) => row !== null);
   }
 
   return (
