@@ -22,4 +22,5 @@
   display: flex;
   font-weight: bold;
   font-size: 10px;
+  text-shadow: -1px 0px #000000;
 }

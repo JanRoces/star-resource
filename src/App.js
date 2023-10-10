@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Logo />
-      <ResourceSelect {...props} {...callBacks} />
       <AppliedFilters {...props} />
+      <ResourceSelect {...props} {...callBacks} />
       <Table {...props} />
     </div>
   );

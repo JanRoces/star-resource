@@ -1,10 +1,19 @@
 .applied-filters-container {
-  align-items: flex-start;
+  align-items: center;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
+  font-size: 12px;
   margin: 20px 20px 0px;
-  padding: 0px 10px;
+}
 
+.applied-filters-content {
+  align-items: flex-start;
+  border: 0.5px solid #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 685px;
 }
 
 .items-container {
