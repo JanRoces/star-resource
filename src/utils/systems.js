@@ -747,4 +747,457 @@ const LEVEL_1_SYSTEMS = [
   },
 ];
 
-export const STAR_SYSTEMS = [...LEVEL_1_SYSTEMS];
+const LEVEL_5_SYSTEMS = [
+  {
+    name: "alpha centauri",
+    level: 5,
+    planets: [
+      {
+        name: "jemison",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+        ],
+        moons: [
+          {
+            name: "kurtz",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "bondar",
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.TUNGSTEN,
+          RESOURCE.PLATINUM,
+          RESOURCE.XENON,
+        ],
+        moons: [
+          {
+            name: "curbeam",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "grissom",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: "olivas",
+        resources: [],
+        moons: [
+          {
+            name: "lovell",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: "voss",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.VANADIUM,
+              RESOURCE.DYSPROSIUM,
+            ],
+          },
+          {
+            name: "chawla",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+          {
+            name: "zamka",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.VANADIUM,
+            ],
+          },
+          {
+            name: "hawley",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+            ],
+          },
+        ],
+      },
+      {
+        name: "gagarin",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.LEAD,
+          RESOURCE.CHLOROSILANES,
+        ],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "luyten's star",
+    level: 5,
+    planets: [
+      {
+        name: "luyten's rock",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.ARGON,
+          RESOURCE.ALKANES,
+          RESOURCE.LITHIUM,
+          RESOURCE.TANTALUM,
+        ],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "procyon b",
+    level: 5,
+    planets: [
+      {
+        name: "procyon-b i",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "sirius",
+    level: 5,
+    planets: [
+      {
+        name: "sirius i",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
+        moons: [],
+      },
+      {
+        name: "sirius ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.IRIDIUM,
+          RESOURCE.LITHIUM,
+          RESOURCE.XENON,
+        ],
+        moons: [
+          {
+            name: "sirius ii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+            ],
+          },
+        ],
+      },
+      {
+        name: "sirius iii",
+        resources: [],
+        moons: [
+          {
+            name: "sirius iii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: "sirius iii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "toliman",
+    level: 5,
+    planets: [
+      {
+        name: "toliman i",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [],
+      },
+      {
+        name: "toliman ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.SILVER,
+        ],
+        moons: [
+          {
+            name: "toliman ii-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+          {
+            name: "toliman ii-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "toliman ii-c",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "sirius iii",
+        resources: [],
+        moons: [
+          {
+            name: "sirius iii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: "sirius iii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "valo",
+    level: 5,
+    planets: [
+      {
+        name: "polvo",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [
+          {
+            name: "miatha",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: "navacci",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "cantra",
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.NEODYMIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "prax",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [],
+      },
+      {
+        name: "hillex",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [],
+      },
+      {
+        name: "lumos",
+        resources: [],
+        moons: [
+          {
+            name: "golga",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "kindi",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: "shorun",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: "virum",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "volii",
+    level: 5,
+    planets: [
+      {
+        name: "volii alpha",
+        resources: [RESOURCE.WATER, RESOURCE.BENZENE],
+        moons: [],
+      },
+      {
+        name: "volii beta",
+        resources: [RESOURCE.WATER, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [
+          {
+            name: "volii delta",
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: "volii chi",
+        resources: [RESOURCE.WATER, RESOURCE.LEAD],
+        moons: [],
+      },
+      {
+        name: "volii epsilon",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.LEAD,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.FLUORINE,
+          RESOURCE.IONIC_LIQUIDS,
+        ],
+        moons: [
+          {
+            name: "volii gamma",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: "volii omega",
+        resources: [],
+        moons: [
+          {
+            name: "volii upsilon",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+      {
+        name: "volii tau",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+        moons: [
+          {
+            name: "volii psi",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: "volii phi",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "wolf",
+    level: 5,
+    planets: [
+      {
+        name: "etherea",
+        resources: [],
+        moons: [
+          {
+            name: "pontem",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.LEAD,
+              RESOURCE.SILVER,
+              RESOURCE.MERCURY,
+            ],
+          },
+        ],
+      },
+      {
+        name: "chthonia",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [],
+      },
+    ],
+  },
+];
+
+export const STAR_SYSTEMS = [...LEVEL_1_SYSTEMS, ...LEVEL_5_SYSTEMS];
