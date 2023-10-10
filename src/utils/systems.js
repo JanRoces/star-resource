@@ -3,7 +3,7 @@ import { RESOURCE } from "./resources";
 const LEVEL_1_SYSTEMS = [
   {
     name: "barnard's star",
-    level: 1,
+    level: "1",
     planets: [
       {
         name: "frost",
@@ -14,7 +14,7 @@ const LEVEL_1_SYSTEMS = [
   },
   {
     name: "cheyenne",
-    level: 1,
+    level: "1",
     planets: [
       {
         name: "akila",
@@ -285,7 +285,7 @@ const LEVEL_1_SYSTEMS = [
   },
   {
     name: "maheo",
-    level: 1,
+    level: "1",
     planets: [
       {
         name: "maheo i",
@@ -421,7 +421,7 @@ const LEVEL_1_SYSTEMS = [
   },
   {
     name: "narion",
-    level: 1,
+    level: "1",
     planets: [
       {
         name: "anselon",
@@ -560,7 +560,7 @@ const LEVEL_1_SYSTEMS = [
   },
   {
     name: "sol",
-    level: 1,
+    level: "1",
     planets: [
       {
         name: "mercury",
@@ -750,7 +750,7 @@ const LEVEL_1_SYSTEMS = [
 const LEVEL_5_SYSTEMS = [
   {
     name: "alpha centauri",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "jemison",
@@ -853,7 +853,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "luyten's star",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "luyten's rock",
@@ -873,7 +873,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "procyon b",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "procyon-b i",
@@ -884,7 +884,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "sirius",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "sirius i",
@@ -946,7 +946,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "toliman",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "toliman i",
@@ -1014,7 +1014,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "valo",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "polvo",
@@ -1102,7 +1102,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "volii",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "volii alpha",
@@ -1174,7 +1174,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "wolf",
-    level: 5,
+    level: "5",
     planets: [
       {
         name: "etherea",

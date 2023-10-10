@@ -1,8 +1,8 @@
 import "../styles/Number.css";
 
-function Number({ digit, color }) {
+function Number({ color, digit, onSelectLevel }) {
   function clickNumber() {
-    // onSelectLevel(digit);
+    onSelectLevel(digit);
   }
 
   return (

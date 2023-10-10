@@ -1,9 +1,8 @@
-import { useState } from "react";
 import "../styles/Table.css";
 import { STAR_SYSTEMS } from "../utils/systems";
 import Resource from "./Resource";
 
-function Table({ filter }) {
+function Table({ filters, levels }) {
   let alternate = true;
 
   const headerConfig = [
@@ -114,10 +113,24 @@ function Table({ filter }) {
   }
 
   function renderFilteredRows() {
-    const rows = STAR_SYSTEMS.flatMap((system) => {
+    let starSystems;
+
+    if (levels.length) {
+      starSystems = STAR_SYSTEMS.filter((system) =>
+        levels.includes(system.level)
+      );
+    }
+
+    if (!filters.length) {
+      return renderAllRows(starSystems);
+    }
+
+    starSystems = starSystems || STAR_SYSTEMS;
+
+    const rows = starSystems.flatMap((system) => {
       return system.planets.flatMap((planet) => {
         const planetRow = planet.resources.some((resource) =>
-          filter.includes(resource.name)
+          filters.includes(resource.name)
         )
           ? renderRow({
               level: system.level,
@@ -132,11 +145,9 @@ function Table({ filter }) {
 
         const moonRows = planet.moons
           .filter((moon) =>
-            moon.resources.some((resource) => filter.includes(resource.name))
+            moon.resources.some((resource) => filters.includes(resource.name))
           )
           .map((moon) => {
-            // alternate = !alternate;
-
             return renderRow({
               level: system.level,
               systemName: system.name,
@@ -155,8 +166,8 @@ function Table({ filter }) {
     return rows.filter((row) => row !== null);
   }
 
-  function renderAllRows() {
-    const rows = STAR_SYSTEMS.flatMap((system) => {
+  function renderAllRows(starSystems = STAR_SYSTEMS) {
+    const rows = starSystems.flatMap((system) => {
       return system.planets.flatMap((planet) => {
         const planetRow = renderRow({
           level: system.level,
@@ -190,7 +201,7 @@ function Table({ filter }) {
   return (
     <div className="table-container">
       {renderHeader()}
-      {filter.length ? renderFilteredRows() : renderAllRows()}
+      {filters.length || levels.length ? renderFilteredRows() : renderAllRows()}
     </div>
   );
 }

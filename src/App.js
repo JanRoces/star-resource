@@ -5,13 +5,19 @@ import Table from "./components/Table";
 import { useState } from "react";
 
 function App() {
-  const [filter, setResourceFilter] = useState([]);
+  const [filters, setResourceFilters] = useState([]);
+  const [levels, setLevels] = useState([]);
 
   return (
     <div className="App">
       <Logo />
-      <ResourceSelect filter={filter} setResourceFilter={setResourceFilter} />
-      <Table filter={filter} />
+      <ResourceSelect
+        levels={levels}
+        filters={filters}
+        setLevels={setLevels}
+        setResourceFilters={setResourceFilters}
+      />
+      <Table filters={filters} levels={levels} />
     </div>
   );
 }

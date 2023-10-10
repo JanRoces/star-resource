@@ -10,7 +10,7 @@ import {
 import Resource from "./Resource";
 import Number from "./Number";
 
-function ResourceSelect({ filter, setResourceFilter }) {
+function ResourceSelect({ filters, levels, setLevels, setResourceFilters }) {
   const resourceGroups = [
     {
       name: "row 1",
@@ -53,28 +53,51 @@ function ResourceSelect({ filter, setResourceFilter }) {
     },
   ];
 
+  function addLevel(number) {
+    setLevels([...levels, number]);
+  }
+
   function addResource(name) {
-    setResourceFilter([...filter, name]);
+    setResourceFilters([...filters, name]);
+  }
+
+  function removeLevel(number) {
+    const levelsClone = [...levels];
+    const levelsIndex = levelsClone.indexOf(number);
+
+    levelsClone.splice(levelsIndex, 1);
+
+    setLevels(levelsClone);
   }
 
   function removeResource(name) {
-    const filterClone = [...filter];
+    const filterClone = [...filters];
     const resourceIndex = filterClone.indexOf(name);
 
     filterClone.splice(resourceIndex, 1);
 
-    setResourceFilter(filterClone);
+    setResourceFilters(filterClone);
+  }
+
+  function selectLevel(number) {
+    return levels.includes(number) ? removeLevel(number) : addLevel(number);
   }
 
   function selectResource(name) {
-    return filter.includes(name) ? removeResource(name) : addResource(name);
+    return filters.includes(name) ? removeResource(name) : addResource(name);
   }
 
   function renderResources({ title, resources }) {
     const items =
       title === "Levels"
         ? resources.map((level) => {
-            return <Number key={level.digit} {...level} />;
+            return (
+              <Number
+                key={level.digit}
+                onSelectLevel={selectLevel}
+                {...level}
+              />
+            );
           })
         : resources.map((resource) => {
             const props = { ...resource, selectable: true };
