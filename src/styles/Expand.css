@@ -1,0 +1,22 @@
+.expand-container {
+  margin: 20px 20px 0px;
+}
+
+.expand-header-container {
+  color: #FFFFFF;
+  display: flex;
+}
+
+.expand-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.label-and-arrow-container {
+  background-color: #202F4D;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
