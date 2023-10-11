@@ -10,6 +10,7 @@
 
 .resource-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   padding: 5px 10px;
 }

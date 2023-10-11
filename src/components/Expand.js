@@ -1,12 +1,24 @@
 import { useState } from "react";
 import "../styles/Expand.css";
 import AppliedFilters from "./AppliedFilters";
+import CurrentSelection from "./CurrentSelection";
 import ResourceSelect from "./ResourceSelect";
 
-function Expand({ filters, levels, setLevels, setResourceFilters }) {
+function Expand({
+  filters,
+  levels,
+  selection,
+  setLevels,
+  setResourceFilters,
+  setSelection,
+}) {
   const [expand, setExpand] = useState(false);
-  const props = { levels, filters };
-  const callBacks = { setLevels, setResourceFilters };
+  const props = { levels, filters, selection };
+  const callBacks = { setLevels, setResourceFilters, setSelection };
+
+  function renderCurrentSelection() {
+    return expand ? <CurrentSelection selection={selection} /> : "";
+  }
 
   function renderHeader() {
     const icon = expand ? "fas fa-angle-up" : "fas fa-angle-down";
@@ -24,6 +36,7 @@ function Expand({ filters, levels, setLevels, setResourceFilters }) {
             <i className={icon}></i>
           </span>
         </div>
+        {renderCurrentSelection()}
       </div>
     );
   }

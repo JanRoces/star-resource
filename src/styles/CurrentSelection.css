@@ -1,0 +1,6 @@
+.selection-container {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+}

@@ -2,6 +2,11 @@ import "../styles/Table.css";
 import { STAR_SYSTEMS } from "../utils/systems";
 import Resource from "./Resource";
 
+export function formatName(str) {
+  return str.replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
 function Table({ filters, levels }) {
   let alternate = true;
 
@@ -36,12 +41,6 @@ function Table({ filters, levels }) {
     moon: "Moon",
     planet: "Planet",
   };
-
-  function formatName(str) {
-    return str.replace(/\w\S*/g, (txt) => {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
-  }
 
   function renderHeader() {
     const headerLabels = [];

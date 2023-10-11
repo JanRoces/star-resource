@@ -10,7 +10,14 @@ import {
 import Resource from "./Resource";
 import Number from "./Number";
 
-function ResourceSelect({ filters, levels, setLevels, setResourceFilters }) {
+function ResourceSelect({
+  filters,
+  levels,
+  selection,
+  setLevels,
+  setResourceFilters,
+  setSelection,
+}) {
   const resourceGroups = [
     {
       name: "row 1",
@@ -87,6 +94,14 @@ function ResourceSelect({ filters, levels, setLevels, setResourceFilters }) {
     return filters.includes(name) ? removeResource(name) : addResource(name);
   }
 
+  function hoverSelection(name) {
+    setSelection(name);
+  }
+
+  function clearHoverSelection(name) {
+    setSelection("");
+  }
+
   function renderResources({ title, resources }) {
     const items =
       title === "Levels"
@@ -106,6 +121,8 @@ function ResourceSelect({ filters, levels, setLevels, setResourceFilters }) {
               <Resource
                 key={resource.name}
                 onSelectResource={selectResource}
+                onHover={hoverSelection}
+                onStopHover={clearHoverSelection}
                 {...props}
               />
             );

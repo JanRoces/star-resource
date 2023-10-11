@@ -7,9 +7,10 @@ import { useState } from "react";
 function App() {
   const [filters, setResourceFilters] = useState([]);
   const [levels, setLevels] = useState([]);
+  const [selection, setSelection] = useState("");
 
-  const props = { levels, filters };
-  const callBacks = { setLevels, setResourceFilters };
+  const props = { levels, filters, selection };
+  const callBacks = { setLevels, setResourceFilters, setSelection };
 
   return (
     <div className="App">
