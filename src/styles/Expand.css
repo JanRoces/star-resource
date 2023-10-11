@@ -1,5 +1,12 @@
 .expand-container {
   margin: 20px 20px 0px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.expand-content {
+  background-color: #202F4D;
 }
 
 .expand-header-container {
@@ -14,7 +21,6 @@
 
 .label-and-arrow-container {
   background-color: #202F4D;
-  border-radius: 15px;
   cursor: pointer;
   display: flex;
   gap: 10px;

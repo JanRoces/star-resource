@@ -14,12 +14,9 @@ function AppliedFilters({ levels, filters }) {
 
   return (
     <div className="applied-filters-container">
-      <div className="applied-filters-content">
-        <div className="label">Applied Filters</div>
-        <div className="items-container">
-          {renderItemList(filters, "Resources")}
-          {renderItemList(levels, "Levels")}
-        </div>
+      <div className="items-container">
+        {renderItemList(filters, "Resources")}
+        {renderItemList(levels, "Levels")}
       </div>
     </div>
   );
