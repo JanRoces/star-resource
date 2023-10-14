@@ -1200,4 +1200,819 @@ const LEVEL_5_SYSTEMS = [
   },
 ];
 
-export const STAR_SYSTEMS = [...LEVEL_1_SYSTEMS, ...LEVEL_5_SYSTEMS];
+const LEVEL_10_SYSTEMS = [
+  {
+    name: "bessel",
+    level: "10",
+    planets: [
+      {
+        name: "bessel i",
+        resources: [],
+        moons: [],
+      },
+      {
+        name: "bessel ii",
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.NEODYMIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "bessel iii",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [
+          {
+            name: "bessel iii-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+          {
+            name: "bessel iii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.ARGON,
+              RESOURCE.COBALT,
+              RESOURCE.PLATINUM,
+              RESOURCE.NEON,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "carinae",
+    level: "10",
+    planets: [
+      {
+        name: "carinae i",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [],
+      },
+      {
+        name: "carinae ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.ARGON,
+          RESOURCE.NEODYMIUM,
+          RESOURCE.NEON,
+        ],
+        moons: [
+          {
+            name: "carinae ii-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "carinae iii",
+        resources: [],
+        moons: [
+          {
+            name: "carinae iii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.ALKANES,
+              RESOURCE.ROTHICITE,
+            ],
+          },
+          {
+            name: "carinae iii-b",
+            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.MERCURY],
+          },
+          {
+            name: "carinae iii-c",
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+          {
+            name: "carinae iii-d",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+        ],
+      },
+      {
+        name: "carinae iv",
+        resources: [],
+        moons: [
+          {
+            name: "carinae iv-a",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+      {
+        name: "carinae v",
+        resources: [],
+        moons: [
+          {
+            name: "carinae v-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.TETRAFLUORIDES,
+            ],
+          },
+          {
+            name: "carinae v-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.CAESIUM,
+            ],
+          },
+          {
+            name: "carinae v-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.XENON,
+              RESOURCE.PALLADIUM,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "eta cassiopeia",
+    level: "10",
+    planets: [
+      {
+        name: "cassiopaeia i",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.FLUORINE,
+          RESOURCE.COBALT,
+        ],
+        moons: [],
+      },
+      {
+        name: "cassiopaeia ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.COBALT,
+          RESOURCE.PLATINUM,
+        ],
+        moons: [
+          {
+            name: "cassiopaeia ii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.TUNGSTEN,
+            ],
+          },
+        ],
+      },
+      {
+        name: "cassiopaeia iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+        ],
+        moons: [
+          {
+            name: "cassiopaeia iii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "cassiopaeia iv",
+        resources: [],
+        moons: [
+          {
+            name: "cassiopaeia iv-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ALKANES,
+              RESOURCE.IRIDIUM,
+              RESOURCE.TANTALUM,
+            ],
+          },
+          {
+            name: "cassiopaeia iv-b",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+          {
+            name: "cassiopaeia iv-c",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PLATINUM],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "kapteyn's star",
+    level: "10",
+    planets: [
+      {
+        name: "kapteyn i",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.PLATINUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "kapteyn ii",
+        resources: [],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "olympus",
+    level: "10",
+    planets: [
+      {
+        name: "nesoi",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.IRIDIUM,
+          RESOURCE.CARBOXYLIC_ACIDS,
+          RESOURCE.TANTALUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "ananke",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.EUROPIUM],
+        moons: [],
+      },
+      {
+        name: "Ourea",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.IRON,
+          RESOURCE.CARBOXYLIC_ACIDS,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "thanatos",
+        resources: [],
+        moons: [
+          {
+            name: "hypnos",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+        ],
+      },
+      {
+        name: "erebus",
+        resources: [RESOURCE.IRON, RESOURCE.URANIUM, RESOURCE.ALKANES],
+        moons: [
+          {
+            name: "pontus",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+          {
+            name: "thalassa",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "aion",
+        resources: [],
+        moons: [
+          {
+            name: "orphius",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: "dionysus",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.LEAD,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.BENZENE,
+              RESOURCE.ALKANES,
+            ],
+          },
+          {
+            name: "mithras",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.COBALT,
+              RESOURCE.PALLADIUM,
+            ],
+          },
+          {
+            name: "cybele",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "piazzi",
+    level: "10",
+    planets: [
+      {
+        name: "piazzi i",
+        resources: [RESOURCE.LEAD],
+        moons: [],
+      },
+      {
+        name: "piazzi ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.FLUORINE,
+          RESOURCE.COBALT,
+          RESOURCE.PLATINUM,
+          RESOURCE.PALLADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "piazzi iii",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [
+          {
+            name: "piazzi iii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "piazzi iii-b",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "piazzi iv",
+        resources: [],
+        moons: [
+          {
+            name: "piazzi iv-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: "piazzi iv-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: "piazzi iv-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+        ],
+      },
+      {
+        name: "piazzi v",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
+        moons: [
+          {
+            name: "piazzi v-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: "piazzi v-b",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: "piazzi v-c",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "piazzi vi",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [
+          {
+            name: "piazzi vi-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: "piazzi vi-b",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+          {
+            name: "piazzi vi-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.CAESIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "piazzi vii",
+        resources: [],
+        moons: [
+          {
+            name: "piazzi vii-a",
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: "piazzi vii-b",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
+          },
+          {
+            name: "piazzi vii-c",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "procyon a",
+    level: "10",
+    planets: [
+      {
+        name: "procyon i",
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.FLUORINE,
+          RESOURCE.TUNGSTEN,
+          RESOURCE.IRIDIUM,
+        ],
+        moons: [
+          {
+            name: "procyon i-a",
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: "procyon ii",
+        resources: [RESOURCE.NICKEL, RESOURCE.LEAD, RESOURCE.TITANIUM],
+        moons: [],
+      },
+      {
+        name: "procyon iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.ARGON,
+          RESOURCE.FLUORINE,
+          RESOURCE.TETRAFLUORIDES,
+          RESOURCE.IONIC_LIQUIDS,
+          RESOURCE.NEON,
+        ],
+        moons: [
+          {
+            name: "procyon iii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: "procyon iv",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+        ],
+        moons: [
+          {
+            name: "procyon iv-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "procyon v",
+        resources: [],
+        moons: [
+          {
+            name: "procyon v-a",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: "procyon v-b",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+          {
+            name: "procyon v-c",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+        ],
+      },
+      {
+        name: "procyon vi",
+        resources: [],
+        moons: [
+          {
+            name: "procyon vi-a",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: "procyon v-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.CARBOXYLIC_ACIDS,
+            ],
+          },
+          {
+            name: "procyon v-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ALKANES,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "tau ceti",
+    level: "10",
+    planets: [
+      {
+        name: "tau ceti i",
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.PLATINUM,
+          RESOURCE.VANADIUM,
+          RESOURCE.PALLADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "tau ceti ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.ALKANES,
+        ],
+        moons: [
+          {
+            name: "tau ceti ii-a",
+            resources: [RESOURCE.WATER, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
+          },
+        ],
+      },
+      {
+        name: "tau ceti iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.ALKANES,
+          RESOURCE.LITHIUM,
+          RESOURCE.TETRAFLUORIDES,
+        ],
+        moons: [],
+      },
+      {
+        name: "tau ceti iv",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.FLUORINE,
+        ],
+        moons: [
+          {
+            name: "tau ceti iv-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+          {
+            name: "tau ceti iv-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: "tau ceti v",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.COBALT,
+          RESOURCE.ALKANES,
+          RESOURCE.PLATINUM,
+          RESOURCE.PALLADIUM,
+          RESOURCE.YTTERBIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "tau ceti vi",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.ALUMINUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.NEODYMIUM,
+        ],
+        moons: [
+          {
+            name: "tau ceti vi-a",
+            resources: [RESOURCE.WATER, RESOURCE.IRON, RESOURCE.TANTALUM],
+          },
+        ],
+      },
+      {
+        name: "tau ceti vii",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [
+          {
+            name: "tau ceti vii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "tau ceti viii",
+        resources: [],
+        moons: [
+          {
+            name: "tau ceti viii-a",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: "tau ceti viii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.ARGON,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: "tau ceti viii-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+              RESOURCE.CAESIUM,
+            ],
+          },
+          {
+            name: "tau ceti viii-d",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.PLATINUM,
+              RESOURCE.PALLADIUM,
+            ],
+          },
+          {
+            name: "tau ceti ix",
+            resources: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "the pup",
+    level: "10",
+    planets: [
+      {
+        name: "pup i",
+        resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.CAESIUM],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "van maanen's star",
+    level: "10",
+    planets: [
+      {
+        name: "van maanen i",
+        resources: [RESOURCE.WATER, RESOURCE.COPPER],
+        moons: [],
+      },
+    ],
+  },
+];
+export const STAR_SYSTEMS = [
+  ...LEVEL_1_SYSTEMS,
+  ...LEVEL_5_SYSTEMS,
+  ...LEVEL_10_SYSTEMS,
+];
