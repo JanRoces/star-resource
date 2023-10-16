@@ -1807,7 +1807,7 @@ const LEVEL_10_SYSTEMS = [
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "procyon v-b",
+            name: "procyon vi-b",
             resources: [
               RESOURCE.WATER,
               RESOURCE.IRON,
@@ -1818,7 +1818,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "procyon v-c",
+            name: "procyon vi-c",
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2011,6 +2011,215 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
 ];
+
+const LEVEL_15_SYSTEMS = [
+  {
+    name: "altair",
+    level: "15",
+    planets: [
+      {
+        name: "altair i",
+        resources: [
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+          RESOURCE.ARGON,
+          RESOURCE.IRIDIUM,
+          RESOURCE.PLATINUM,
+          RESOURCE.PLUTONIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "altair ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+        ],
+        moons: [],
+      },
+      {
+        name: "altair iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.FLUORINE,
+          RESOURCE.GOLD,
+        ],
+        moons: [
+          {
+            name: "altair iii-a",
+            resources: [],
+          },
+          {
+            name: "altair iii-b",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: "altair iii-c",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "altair iv",
+        resources: [],
+        moons: [
+          {
+            name: "altair iv-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.TETRAFLUORIDES,
+            ],
+          },
+          {
+            name: "altair iv-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: "altair iv-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.COBALT,
+              RESOURCE.TUNGSTEN,
+            ],
+          },
+          {
+            name: "altair iv-d",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+        ],
+      },
+      {
+        name: "altair v",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [
+          {
+            name: "altair v-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.LEAD],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "andromas",
+    level: "15",
+    planets: [
+      {
+        name: "andromas i",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+          RESOURCE.XENON,
+        ],
+        moons: [],
+      },
+      {
+        name: "andromas ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.ARGON,
+          RESOURCE.FLUORINE,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.LITHIUM,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [],
+      },
+      {
+        name: "andromas iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.ARGON,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.EUROPIUM,
+          RESOURCE.NEON,
+        ],
+        moons: [],
+      },
+      {
+        name: "andromas iv",
+        resources: [],
+        moons: [
+          {
+            name: "andromas iv-a",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+        ],
+      },
+      {
+        name: "andromas v",
+        resources: [],
+        moons: [
+          {
+            name: "andromas v-a",
+            resources: [],
+          },
+          {
+            name: "andromas v-b",
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: "andromas vi",
+        resources: [],
+        moons: [
+          {
+            name: "andromas vi-a",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+          },
+          {
+            name: "andromas vi-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.COPPER,
+              RESOURCE.IRON,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.ALKANES,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+
 export const STAR_SYSTEMS = [
   ...LEVEL_1_SYSTEMS,
   ...LEVEL_5_SYSTEMS,
