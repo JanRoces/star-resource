@@ -13,7 +13,6 @@ import Number from "./Number";
 function ResourceSelect({
   filters,
   levels,
-  selection,
   setLevels,
   setResourceFilters,
   setSelection,

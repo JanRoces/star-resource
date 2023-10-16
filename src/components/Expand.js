@@ -3,6 +3,7 @@ import "../styles/Expand.css";
 import AppliedFilters from "./AppliedFilters";
 import CurrentSelection from "./CurrentSelection";
 import ResourceSelect from "./ResourceSelect";
+import ResetButton from "./ResetButton";
 
 function Expand({
   filters,
@@ -45,6 +46,7 @@ function Expand({
     return expand ? (
       <div className="expand-content">
         <AppliedFilters {...props} />
+        <ResetButton {...callBacks} />
         <ResourceSelect {...props} {...callBacks} />
       </div>
     ) : (
