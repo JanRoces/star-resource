@@ -2218,10 +2218,368 @@ const LEVEL_15_SYSTEMS = [
       },
     ],
   },
+  {
+    name: "aranae",
+    level: "15",
+    planets: [
+      {
+        name: "aranae i",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [],
+      },
+      {
+        name: "aranae ii",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [
+          {
+            name: "aranae ii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "aranae ii-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "aranae iii",
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+        moons: [],
+      },
+      {
+        name: "aranae iv",
+        resources: [],
+        moons: [
+          {
+            name: "aranae iv-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
+          },
+          {
+            name: "aranae iv-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
+          },
+          {
+            name: "aranae iv-c",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: "aranae iv-d",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+      {
+        name: "aranae v",
+        resources: [RESOURCE.WATER, RESOURCE.LEAD],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "arcturus",
+    level: "15",
+    planets: [
+      {
+        name: "arcturus i",
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.IRIDIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "arcturus ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.IRIDIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "arcturus iii",
+        resources: [],
+        moons: [
+          {
+            name: "arcturus iii-a",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "muphrid",
+    level: "15",
+    planets: [
+      {
+        name: "muphrid i",
+        resources: [RESOURCE.URANIUM, RESOURCE.IRIDIUM],
+        moons: [
+          {
+            name: "muphrid i-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "muphrid ii",
+        resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.URANIUM],
+        moons: [
+          {
+            name: "muphrid ii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NICKEL,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "muphrid iii",
+        resources: [
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.ALKANES,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [
+          {
+            name: "muphrid iii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.YTTERBIUM],
+          },
+          {
+            name: "muphrid iii-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "muphrid iii-c",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "muphrid iv",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.ALUMINUM,
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.ALKANES,
+          RESOURCE.LITHIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "muphrid v",
+        resources: [],
+        moons: [
+          {
+            name: "muphrid v-a",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+          {
+            name: "muphrid v-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.LEAD,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.FLUORINE,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.XENON,
+            ],
+          },
+          {
+            name: "muphrid v-c",
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: "muphrid v-d",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.COBALT,
+            ],
+          },
+        ],
+      },
+      {
+        name: "muphrid vi",
+        resources: [],
+        moons: [
+          {
+            name: "muphrid vi-a",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+          {
+            name: "muphrid vi-b",
+            resources: [
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.MERCURY,
+            ],
+          },
+          {
+            name: "muphrid vi-c",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "muphrid vi-d",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.ANTIMONY,
+            ],
+          },
+        ],
+      },
+      {
+        name: "muphrid vii",
+        resources: [],
+        moons: [
+          {
+            name: "muphrid vii-a",
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.ANTIMONY],
+          },
+          {
+            name: "muphrid vii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.COBALT,
+              RESOURCE.ANTIMONY,
+            ],
+          },
+          {
+            name: "muphrid vii-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.IONIC_LIQUIDS,
+            ],
+          },
+        ],
+      },
+      {
+        name: "muphrid viii",
+        resources: [],
+        moons: [
+          {
+            name: "muphrid viii-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.SILVER,
+              RESOURCE.PLATINUM,
+              RESOURCE.VANADIUM,
+            ],
+          },
+          {
+            name: "muphrid viii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.CAESIUM,
+            ],
+          },
+          {
+            name: "muphrid viii-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.COBALT,
+              RESOURCE.TUNGSTEN,
+            ],
+          },
+          {
+            name: "muphrid viii-d",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.COBALT,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "sagan",
+    level: "15",
+    planets: [
+      {
+        name: "sagan 1",
+        resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: "sakharov",
+    level: "15",
+    planets: [
+      {
+        name: "bonner",
+        resources: [],
+        moons: [
+          {
+            name: "mir ii",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const STAR_SYSTEMS = [
   ...LEVEL_1_SYSTEMS,
   ...LEVEL_5_SYSTEMS,
   ...LEVEL_10_SYSTEMS,
+  ...LEVEL_15_SYSTEMS,
 ];
+
+//template
+// {
+//   name: "arcturus",
+//   level: "15",
+//   planets: [
+//     {
+//       name: "aranae i",
+//       resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+//       moons: [],
+//     },
+//   ],
+// },
