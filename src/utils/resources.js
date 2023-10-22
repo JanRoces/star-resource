@@ -385,7 +385,7 @@ export const RESOURCE = {
   },
   TASINE: {
     name: "tasine",
-    symbol: "Ti",
+    symbol: "Tsn",
     type: TYPE.GAS,
     rarity: RARITY.UNIQUE,
     backgroundColor: "#FBDC4C",

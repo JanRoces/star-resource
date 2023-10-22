@@ -2564,22 +2564,348 @@ const LEVEL_15_SYSTEMS = [
   },
 ];
 
+const LEVEL_20_SYSTEMS = [
+  {
+    name: "beta andraste",
+    level: "20",
+    planets: [
+      {
+        name: "beta andraste i",
+        resources: [],
+        moons: [
+          {
+            name: "beta andraste i-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.URANIUM,
+              RESOURCE.IRON,
+              RESOURCE.IRIDIUM,
+              RESOURCE.VANADIUM,
+            ],
+          },
+          {
+            name: "beta andraste i-b",
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: "beta andraste i-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.GOLD,
+              RESOURCE.ANTIMONY,
+            ],
+          },
+          {
+            name: "beta andraste i-d",
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "bradbury",
+    level: "20",
+    planets: [
+      {
+        name: "bradbury i",
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.IRON,
+          RESOURCE.ALKANES,
+          RESOURCE.YTTERBIUM,
+        ],
+        moons: [
+          {
+            name: "bradbury i-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "bradbury i-b",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "bradbury ii",
+        resources: [
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ALKANES,
+        ],
+        moons: [],
+      },
+      {
+        name: "bradbury iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.COBALT,
+          RESOURCE.TITANIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: "bradbury iv",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+        ],
+        moons: [
+          {
+            name: "bradbury iv-a",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "bradbury v",
+        resources: [],
+        moons: [
+          {
+            name: "bradbury v-a",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "eridani",
+    level: "20",
+    planets: [
+      {
+        name: "eridani i",
+        resources: [RESOURCE.CHLORINE, RESOURCE.URANIUM],
+        moons: [],
+      },
+      {
+        name: "eridani ii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.FLUORINE,
+          RESOURCE.COBALT,
+          RESOURCE.GOLD,
+        ],
+        moons: [],
+      },
+      {
+        name: "eridani iii",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+          RESOURCE.PLUTONIUM,
+        ],
+        moons: [
+          {
+            name: "eridani iii-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
+          },
+          {
+            name: "eridani iii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.IRIDIUM,
+              RESOURCE.VANADIUM,
+            ],
+          },
+          {
+            name: "eridani iii-c",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: "eridani iv",
+        resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.FLUORINE],
+        moons: [
+          {
+            name: "eridani iv-a",
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: "eridani iv-b",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: "eridani iv-c",
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "eridani v",
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.SILVER,
+        ],
+        moons: [],
+      },
+      {
+        name: "eridani vi",
+        resources: [],
+        moons: [
+          {
+            name: "eridani vi-a",
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+        ],
+      },
+      {
+        name: "eridani vii",
+        resources: [],
+        moons: [
+          {
+            name: "eridani vii-a",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.NEON],
+          },
+          {
+            name: "eridani vii-b",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+          {
+            name: "eridani vii-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.TITANIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "eridani viii",
+        resources: [],
+        moons: [
+          {
+            name: "eridani vii-a",
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+          {
+            name: "eridani viii-b",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.COBALT,
+              RESOURCE.SILVER,
+            ],
+          },
+          {
+            name: "eridani viii-c",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+              RESOURCE.CAESIUM,
+            ],
+          },
+          {
+            name: "eridani viii-d",
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.ALKANES,
+              RESOURCE.LITHIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: "eridani ix",
+        resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+        moons: [],
+      },
+    ],
+  },
+];
+
+//template
+// {
+//   name: "bradbury",
+//   level: "20",
+//   planets: [
+//     {
+//       name: "bradbury i",
+//       resources: [
+//         RESOURCE.HELIUM_3,
+//         RESOURCE.IRON,
+//         RESOURCE.ALKANES,
+//         RESOURCE.YTTERBIUM,
+//       ],
+//       moons: [
+//         {
+//           name: "bradbury i-a",
+//           resources: [
+//             RESOURCE.HELIUM_3,
+//             RESOURCE.ALUMINUM,
+//           ],
+//         },
+//       ],
+//     },
+//   ],
+// },
+
 export const STAR_SYSTEMS = [
   ...LEVEL_1_SYSTEMS,
   ...LEVEL_5_SYSTEMS,
   ...LEVEL_10_SYSTEMS,
   ...LEVEL_15_SYSTEMS,
 ];
-
-//template
-// {
-//   name: "arcturus",
-//   level: "15",
-//   planets: [
-//     {
-//       name: "aranae i",
-//       resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
-//       moons: [],
-//     },
-//   ],
-// },
