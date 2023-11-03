@@ -1,24 +1,24 @@
-import { RESOURCE } from "../resources";
-import { LEVEL_25_SYSTEMS, LEVEL_30_SYSTEMS } from "./systems25to30";
+import { RESOURCE } from '../resources';
+import { LEVEL_25_SYSTEMS, LEVEL_30_SYSTEMS } from './systems25to30';
 
 const LEVEL_1_SYSTEMS = [
   {
     name: "barnard's star",
-    level: "1",
+    level: '1',
     planets: [
       {
-        name: "frost",
+        name: 'frost',
         resources: [RESOURCE.WATER, RESOURCE.HELIUM_3, RESOURCE.LEAD],
         moons: [],
       },
     ],
   },
   {
-    name: "cheyenne",
-    level: "1",
+    name: 'cheyenne',
+    level: '1',
     planets: [
       {
-        name: "akila",
+        name: 'akila',
         resources: [
           RESOURCE.WATER,
           RESOURCE.ALUMINUM,
@@ -29,7 +29,7 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "antherum",
+            name: 'antherum',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -38,7 +38,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "bindi",
+            name: 'bindi',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -49,7 +49,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "codos",
+            name: 'codos',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -64,7 +64,7 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "skink",
+        name: 'skink',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -78,11 +78,11 @@ const LEVEL_1_SYSTEMS = [
         moons: [],
       },
       {
-        name: "burran",
+        name: 'burran',
         resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
         moons: [
           {
-            name: "rell",
+            name: 'rell',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -90,7 +90,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "grizzit",
+            name: 'grizzit',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -100,7 +100,7 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "washakie",
+        name: 'washakie',
         resources: [
           RESOURCE.WATER,
           RESOURCE.LEAD,
@@ -112,7 +112,7 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "smet",
+            name: 'smet',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -123,11 +123,11 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "montara",
+        name: 'montara',
         resources: [],
         moons: [
           {
-            name: "montara luna",
+            name: 'montara luna',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -139,7 +139,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "heilo",
+            name: 'heilo',
             resources: [
               RESOURCE.WATER,
               RESOURCE.LEAD,
@@ -148,7 +148,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "kalira",
+            name: 'kalira',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -157,11 +157,11 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "thren",
+            name: 'thren',
             resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.TUNGSTEN],
           },
           {
-            name: "wellish",
+            name: 'wellish',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -171,33 +171,33 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "agamon",
+        name: 'agamon',
         resources: [],
         moons: [
           {
-            name: "agamon a",
+            name: 'agamon a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.ARGON],
           },
           {
-            name: "agamon b",
+            name: 'agamon b',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "agamon c",
+            name: 'agamon c',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
           {
-            name: "agamon d",
+            name: 'agamon d',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
         ],
       },
       {
-        name: "stellis",
+        name: 'stellis',
         resources: [],
         moons: [
           {
-            name: "stellis a",
+            name: 'stellis a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -207,15 +207,15 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "stellis b",
+            name: 'stellis b',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
           {
-            name: "stellis c",
+            name: 'stellis c',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
           {
-            name: "stellis d",
+            name: 'stellis d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -227,15 +227,15 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "fenn",
+        name: 'fenn',
         resources: [],
         moons: [
           {
-            name: "tarhnis",
+            name: 'tarhnis',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "cragg",
+            name: 'cragg',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -248,15 +248,15 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "navaha",
+        name: 'navaha',
         resources: [],
         moons: [
           {
-            name: "hardpoint",
+            name: 'hardpoint',
             resources: [],
           },
           {
-            name: "belwah",
+            name: 'belwah',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -269,15 +269,15 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "laramie",
+            name: 'laramie',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
           {
-            name: "olaran",
+            name: 'olaran',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
           {
-            name: "bismark",
+            name: 'bismark',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
         ],
@@ -285,11 +285,11 @@ const LEVEL_1_SYSTEMS = [
     ],
   },
   {
-    name: "maheo",
-    level: "1",
+    name: 'maheo',
+    level: '1',
     planets: [
       {
-        name: "maheo i",
+        name: 'maheo i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -303,7 +303,7 @@ const LEVEL_1_SYSTEMS = [
         moons: [],
       },
       {
-        name: "maheo ii",
+        name: 'maheo ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.HELIUM_3,
@@ -317,11 +317,11 @@ const LEVEL_1_SYSTEMS = [
         moons: [],
       },
       {
-        name: "maheo iii",
+        name: 'maheo iii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [
           {
-            name: "maheo iii-a",
+            name: 'maheo iii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -329,17 +329,17 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "maheo iii-b",
+            name: 'maheo iii-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "maheo iv",
+        name: 'maheo iv',
         resources: [],
         moons: [
           {
-            name: "maheo iv-a",
+            name: 'maheo iv-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -348,11 +348,11 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "maheo iv-b",
+            name: 'maheo iv-b',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.NEON],
           },
           {
-            name: "maheo iv-c",
+            name: 'maheo iv-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -364,7 +364,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "maheo iv-d",
+            name: 'maheo iv-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -375,11 +375,11 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "maheo v",
+        name: 'maheo v',
         resources: [],
         moons: [
           {
-            name: "maheo v-a",
+            name: 'maheo v-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -390,17 +390,17 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "maheo vi",
+        name: 'maheo vi',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [
           {
-            name: "maheo vi-a",
+            name: 'maheo vi-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "maheo vii",
+        name: 'maheo vii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -409,7 +409,7 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "maheo vii-a",
+            name: 'maheo vii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -421,15 +421,15 @@ const LEVEL_1_SYSTEMS = [
     ],
   },
   {
-    name: "narion",
-    level: "1",
+    name: 'narion',
+    level: '1',
     planets: [
       {
-        name: "anselon",
+        name: 'anselon',
         resources: [],
         moons: [
           {
-            name: "kreet",
+            name: 'kreet',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -442,7 +442,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "vectera",
+            name: 'vectera',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -457,11 +457,11 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "magreth",
+        name: 'magreth',
         resources: [RESOURCE.HELIUM_3, RESOURCE.LEAD, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "hyperia",
+            name: 'hyperia',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -472,7 +472,7 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "sumati",
+        name: 'sumati',
         resources: [
           RESOURCE.WATER,
           RESOURCE.LEAD,
@@ -484,7 +484,7 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "andraphon",
+            name: 'andraphon',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -496,7 +496,7 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "niira",
+        name: 'niira',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -510,7 +510,7 @@ const LEVEL_1_SYSTEMS = [
         moons: [],
       },
       {
-        name: "danra",
+        name: 'danra',
         resources: [
           RESOURCE.HELIUM_3,
           RESOURCE.ALUMINUM,
@@ -519,11 +519,11 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "podius",
+            name: 'podius',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "gryphus",
+            name: 'gryphus',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -532,7 +532,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "dalvik",
+            name: 'dalvik',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -543,11 +543,11 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "deepala",
+        name: 'deepala',
         resources: [],
         moons: [
           {
-            name: "grimsey",
+            name: 'grimsey',
             resources: [
               RESOURCE.URANIUM,
               RESOURCE.IRIDIUM,
@@ -560,16 +560,16 @@ const LEVEL_1_SYSTEMS = [
     ],
   },
   {
-    name: "sol",
-    level: "1",
+    name: 'sol',
+    level: '1',
     planets: [
       {
-        name: "mercury",
+        name: 'mercury',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
         moons: [],
       },
       {
-        name: "venus",
+        name: 'venus',
         resources: [
           RESOURCE.WATER,
           RESOURCE.NICKEL,
@@ -580,7 +580,7 @@ const LEVEL_1_SYSTEMS = [
         moons: [],
       },
       {
-        name: "earth",
+        name: 'earth',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -590,13 +590,13 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "luna",
+            name: 'luna',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "mars",
+        name: 'mars',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -605,21 +605,21 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "deimos",
+            name: 'deimos',
             resources: [],
           },
           {
-            name: "phobos",
+            name: 'phobos',
             resources: [],
           },
         ],
       },
       {
-        name: "jupiter",
+        name: 'jupiter',
         resources: [],
         moons: [
           {
-            name: "europa",
+            name: 'europa',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -627,29 +627,29 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "callisto",
+            name: 'callisto',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "io",
+            name: 'io',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "ganymede",
+            name: 'ganymede',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
         ],
       },
       {
-        name: "saturn",
+        name: 'saturn',
         resources: [],
         moons: [
           {
-            name: "rhea",
+            name: 'rhea',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
           {
-            name: "enceladus",
+            name: 'enceladus',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ARGON,
@@ -658,7 +658,7 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "lapetus",
+            name: 'lapetus',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ARGON,
@@ -667,15 +667,15 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "dione",
+            name: 'dione',
             resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.SILVER],
           },
           {
-            name: "mimas",
+            name: 'mimas',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PALLADIUM],
           },
           {
-            name: "titan",
+            name: 'titan',
             resources: [
               RESOURCE.WATER,
               RESOURCE.LEAD,
@@ -684,33 +684,33 @@ const LEVEL_1_SYSTEMS = [
             ],
           },
           {
-            name: "tethys",
+            name: 'tethys',
             resources: [RESOURCE.WATER, RESOURCE.LEAD],
           },
         ],
       },
       {
-        name: "uranus",
+        name: 'uranus',
         resources: [],
         moons: [
           {
-            name: "oberon",
+            name: 'oberon',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: "ariel",
+            name: 'ariel',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "titania",
+            name: 'titania',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "miranda",
+            name: 'miranda',
             resources: [RESOURCE.WATER, RESOURCE.LEAD],
           },
           {
-            name: "umbriel",
+            name: 'umbriel',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ARGON,
@@ -720,17 +720,17 @@ const LEVEL_1_SYSTEMS = [
         ],
       },
       {
-        name: "neptune",
+        name: 'neptune',
         resources: [],
         moons: [
           {
-            name: "triton",
+            name: 'triton',
             resources: [],
           },
         ],
       },
       {
-        name: "pluto",
+        name: 'pluto',
         resources: [
           RESOURCE.WATER,
           RESOURCE.LEAD,
@@ -739,7 +739,7 @@ const LEVEL_1_SYSTEMS = [
         ],
         moons: [
           {
-            name: "charon",
+            name: 'charon',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
         ],
@@ -750,11 +750,11 @@ const LEVEL_1_SYSTEMS = [
 
 const LEVEL_5_SYSTEMS = [
   {
-    name: "alpha centauri",
-    level: "5",
+    name: 'alpha centauri',
+    level: '5',
     planets: [
       {
-        name: "jemison",
+        name: 'jemison',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -764,13 +764,13 @@ const LEVEL_5_SYSTEMS = [
         ],
         moons: [
           {
-            name: "kurtz",
+            name: 'kurtz',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "bondar",
+        name: 'bondar',
         resources: [
           RESOURCE.CHLORINE,
           RESOURCE.NICKEL,
@@ -781,25 +781,25 @@ const LEVEL_5_SYSTEMS = [
         ],
         moons: [
           {
-            name: "curbeam",
+            name: 'curbeam',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "grissom",
+            name: 'grissom',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "olivas",
+        name: 'olivas',
         resources: [],
         moons: [
           {
-            name: "lovell",
+            name: 'lovell',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
           {
-            name: "voss",
+            name: 'voss',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -812,11 +812,11 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "chawla",
+            name: 'chawla',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
           {
-            name: "zamka",
+            name: 'zamka',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -829,7 +829,7 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "hawley",
+            name: 'hawley',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -841,7 +841,7 @@ const LEVEL_5_SYSTEMS = [
         ],
       },
       {
-        name: "gagarin",
+        name: 'gagarin',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -854,7 +854,7 @@ const LEVEL_5_SYSTEMS = [
   },
   {
     name: "luyten's star",
-    level: "5",
+    level: '5',
     planets: [
       {
         name: "luyten's rock",
@@ -873,27 +873,27 @@ const LEVEL_5_SYSTEMS = [
     ],
   },
   {
-    name: "procyon b",
-    level: "5",
+    name: 'procyon b',
+    level: '5',
     planets: [
       {
-        name: "procyon-b i",
+        name: 'procyon-b i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
         moons: [],
       },
     ],
   },
   {
-    name: "sirius",
-    level: "5",
+    name: 'sirius',
+    level: '5',
     planets: [
       {
-        name: "sirius i",
+        name: 'sirius i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
         moons: [],
       },
       {
-        name: "sirius ii",
+        name: 'sirius ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -906,7 +906,7 @@ const LEVEL_5_SYSTEMS = [
         ],
         moons: [
           {
-            name: "sirius ii-a",
+            name: 'sirius ii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -919,11 +919,11 @@ const LEVEL_5_SYSTEMS = [
         ],
       },
       {
-        name: "sirius iii",
+        name: 'sirius iii',
         resources: [],
         moons: [
           {
-            name: "sirius iii-a",
+            name: 'sirius iii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -934,7 +934,7 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "sirius iii-b",
+            name: 'sirius iii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -946,16 +946,16 @@ const LEVEL_5_SYSTEMS = [
     ],
   },
   {
-    name: "toliman",
-    level: "5",
+    name: 'toliman',
+    level: '5',
     planets: [
       {
-        name: "toliman i",
+        name: 'toliman i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [],
       },
       {
-        name: "toliman ii",
+        name: 'toliman ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.LEAD,
@@ -965,7 +965,7 @@ const LEVEL_5_SYSTEMS = [
         ],
         moons: [
           {
-            name: "toliman ii-a",
+            name: 'toliman ii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -973,11 +973,11 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "toliman ii-b",
+            name: 'toliman ii-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "toliman ii-c",
+            name: 'toliman ii-c',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -987,11 +987,11 @@ const LEVEL_5_SYSTEMS = [
         ],
       },
       {
-        name: "sirius iii",
+        name: 'sirius iii',
         resources: [],
         moons: [
           {
-            name: "sirius iii-a",
+            name: 'sirius iii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -1002,7 +1002,7 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "sirius iii-b",
+            name: 'sirius iii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1014,11 +1014,11 @@ const LEVEL_5_SYSTEMS = [
     ],
   },
   {
-    name: "valo",
-    level: "5",
+    name: 'valo',
+    level: '5',
     planets: [
       {
-        name: "polvo",
+        name: 'polvo',
         resources: [
           RESOURCE.WATER,
           RESOURCE.NICKEL,
@@ -1030,7 +1030,7 @@ const LEVEL_5_SYSTEMS = [
         ],
         moons: [
           {
-            name: "miatha",
+            name: 'miatha',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1038,7 +1038,7 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "navacci",
+            name: 'navacci',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1048,7 +1048,7 @@ const LEVEL_5_SYSTEMS = [
         ],
       },
       {
-        name: "cantra",
+        name: 'cantra',
         resources: [
           RESOURCE.HELIUM_3,
           RESOURCE.ALUMINUM,
@@ -1058,25 +1058,25 @@ const LEVEL_5_SYSTEMS = [
         moons: [],
       },
       {
-        name: "prax",
+        name: 'prax',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [],
       },
       {
-        name: "hillex",
+        name: 'hillex',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [],
       },
       {
-        name: "lumos",
+        name: 'lumos',
         resources: [],
         moons: [
           {
-            name: "golga",
+            name: 'golga',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "kindi",
+            name: 'kindi',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1085,7 +1085,7 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "shorun",
+            name: 'shorun',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1094,7 +1094,7 @@ const LEVEL_5_SYSTEMS = [
             ],
           },
           {
-            name: "virum",
+            name: 'virum',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
         ],
@@ -1102,31 +1102,31 @@ const LEVEL_5_SYSTEMS = [
     ],
   },
   {
-    name: "volii",
-    level: "5",
+    name: 'volii',
+    level: '5',
     planets: [
       {
-        name: "volii alpha",
+        name: 'volii alpha',
         resources: [RESOURCE.WATER, RESOURCE.BENZENE],
         moons: [],
       },
       {
-        name: "volii beta",
+        name: 'volii beta',
         resources: [RESOURCE.WATER, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [
           {
-            name: "volii delta",
+            name: 'volii delta',
             resources: [],
           },
         ],
       },
       {
-        name: "volii chi",
+        name: 'volii chi',
         resources: [RESOURCE.WATER, RESOURCE.LEAD],
         moons: [],
       },
       {
-        name: "volii epsilon",
+        name: 'volii epsilon',
         resources: [
           RESOURCE.WATER,
           RESOURCE.LEAD,
@@ -1138,31 +1138,31 @@ const LEVEL_5_SYSTEMS = [
         ],
         moons: [
           {
-            name: "volii gamma",
+            name: 'volii gamma',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "volii omega",
+        name: 'volii omega',
         resources: [],
         moons: [
           {
-            name: "volii upsilon",
+            name: 'volii upsilon',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
         ],
       },
       {
-        name: "volii tau",
+        name: 'volii tau',
         resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
         moons: [
           {
-            name: "volii psi",
+            name: 'volii psi',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "volii phi",
+            name: 'volii phi',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1174,15 +1174,15 @@ const LEVEL_5_SYSTEMS = [
     ],
   },
   {
-    name: "wolf",
-    level: "5",
+    name: 'wolf',
+    level: '5',
     planets: [
       {
-        name: "etherea",
+        name: 'etherea',
         resources: [],
         moons: [
           {
-            name: "pontem",
+            name: 'pontem',
             resources: [
               RESOURCE.WATER,
               RESOURCE.LEAD,
@@ -1193,7 +1193,7 @@ const LEVEL_5_SYSTEMS = [
         ],
       },
       {
-        name: "chthonia",
+        name: 'chthonia',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [],
       },
@@ -1203,16 +1203,16 @@ const LEVEL_5_SYSTEMS = [
 
 const LEVEL_10_SYSTEMS = [
   {
-    name: "bessel",
-    level: "10",
+    name: 'bessel',
+    level: '10',
     planets: [
       {
-        name: "bessel i",
+        name: 'bessel i',
         resources: [],
         moons: [],
       },
       {
-        name: "bessel ii",
+        name: 'bessel ii',
         resources: [
           RESOURCE.HELIUM_3,
           RESOURCE.ALUMINUM,
@@ -1222,11 +1222,11 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "bessel iii",
+        name: 'bessel iii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "bessel iii-a",
+            name: 'bessel iii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1234,7 +1234,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "bessel iii-b",
+            name: 'bessel iii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -1251,16 +1251,16 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
   {
-    name: "carinae",
-    level: "10",
+    name: 'carinae',
+    level: '10',
     planets: [
       {
-        name: "carinae i",
+        name: 'carinae i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [],
       },
       {
-        name: "carinae ii",
+        name: 'carinae ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.HELIUM_3,
@@ -1271,7 +1271,7 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "carinae ii-a",
+            name: 'carinae ii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1281,11 +1281,11 @@ const LEVEL_10_SYSTEMS = [
         ],
       },
       {
-        name: "carinae iii",
+        name: 'carinae iii',
         resources: [],
         moons: [
           {
-            name: "carinae iii-a",
+            name: 'carinae iii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.IRON,
@@ -1295,35 +1295,35 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "carinae iii-b",
+            name: 'carinae iii-b',
             resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.MERCURY],
           },
           {
-            name: "carinae iii-c",
+            name: 'carinae iii-c',
             resources: [RESOURCE.WATER, RESOURCE.LEAD],
           },
           {
-            name: "carinae iii-d",
+            name: 'carinae iii-d',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
         ],
       },
       {
-        name: "carinae iv",
+        name: 'carinae iv',
         resources: [],
         moons: [
           {
-            name: "carinae iv-a",
+            name: 'carinae iv-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
         ],
       },
       {
-        name: "carinae v",
+        name: 'carinae v',
         resources: [],
         moons: [
           {
-            name: "carinae v-a",
+            name: 'carinae v-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -1331,7 +1331,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "carinae v-b",
+            name: 'carinae v-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1340,7 +1340,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "carinae v-c",
+            name: 'carinae v-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1357,11 +1357,11 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
   {
-    name: "eta cassiopeia",
-    level: "10",
+    name: 'eta cassiopeia',
+    level: '10',
     planets: [
       {
-        name: "cassiopaeia i",
+        name: 'cassiopaeia i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -1373,7 +1373,7 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "cassiopaeia ii",
+        name: 'cassiopaeia ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -1383,7 +1383,7 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "cassiopaeia ii-a",
+            name: 'cassiopaeia ii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -1398,7 +1398,7 @@ const LEVEL_10_SYSTEMS = [
         ],
       },
       {
-        name: "cassiopaeia iii",
+        name: 'cassiopaeia iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -1407,17 +1407,17 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "cassiopaeia iii-a",
+            name: 'cassiopaeia iii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "cassiopaeia iv",
+        name: 'cassiopaeia iv',
         resources: [],
         moons: [
           {
-            name: "cassiopaeia iv-a",
+            name: 'cassiopaeia iv-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1430,11 +1430,11 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "cassiopaeia iv-b",
+            name: 'cassiopaeia iv-b',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: "cassiopaeia iv-c",
+            name: 'cassiopaeia iv-c',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PLATINUM],
           },
         ],
@@ -1443,10 +1443,10 @@ const LEVEL_10_SYSTEMS = [
   },
   {
     name: "kapteyn's star",
-    level: "10",
+    level: '10',
     planets: [
       {
-        name: "kapteyn i",
+        name: 'kapteyn i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.HELIUM_3,
@@ -1460,18 +1460,18 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "kapteyn ii",
+        name: 'kapteyn ii',
         resources: [],
         moons: [],
       },
     ],
   },
   {
-    name: "olympus",
-    level: "10",
+    name: 'olympus',
+    level: '10',
     planets: [
       {
-        name: "nesoi",
+        name: 'nesoi',
         resources: [
           RESOURCE.WATER,
           RESOURCE.IRON,
@@ -1485,12 +1485,12 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "ananke",
+        name: 'ananke',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.EUROPIUM],
         moons: [],
       },
       {
-        name: "Ourea",
+        name: 'Ourea',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -1504,21 +1504,21 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "thanatos",
+        name: 'thanatos',
         resources: [],
         moons: [
           {
-            name: "hypnos",
+            name: 'hypnos',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
         ],
       },
       {
-        name: "erebus",
+        name: 'erebus',
         resources: [RESOURCE.IRON, RESOURCE.URANIUM, RESOURCE.ALKANES],
         moons: [
           {
-            name: "pontus",
+            name: 'pontus',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1526,21 +1526,21 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "thalassa",
+            name: 'thalassa',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "aion",
+        name: 'aion',
         resources: [],
         moons: [
           {
-            name: "orphius",
+            name: 'orphius',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "dionysus",
+            name: 'dionysus',
             resources: [
               RESOURCE.WATER,
               RESOURCE.LEAD,
@@ -1553,7 +1553,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "mithras",
+            name: 'mithras',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -1562,7 +1562,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "cybele",
+            name: 'cybele',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
@@ -1570,16 +1570,16 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
   {
-    name: "piazzi",
-    level: "10",
+    name: 'piazzi',
+    level: '10',
     planets: [
       {
-        name: "piazzi i",
+        name: 'piazzi i',
         resources: [RESOURCE.LEAD],
         moons: [],
       },
       {
-        name: "piazzi ii",
+        name: 'piazzi ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -1593,15 +1593,15 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "piazzi iii",
+        name: 'piazzi iii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "piazzi iii-a",
+            name: 'piazzi iii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "piazzi iii-b",
+            name: 'piazzi iii-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1612,11 +1612,11 @@ const LEVEL_10_SYSTEMS = [
         ],
       },
       {
-        name: "piazzi iv",
+        name: 'piazzi iv',
         resources: [],
         moons: [
           {
-            name: "piazzi iv-a",
+            name: 'piazzi iv-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1625,11 +1625,11 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "piazzi iv-b",
+            name: 'piazzi iv-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "piazzi iv-c",
+            name: 'piazzi iv-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1641,15 +1641,15 @@ const LEVEL_10_SYSTEMS = [
         ],
       },
       {
-        name: "piazzi v",
+        name: 'piazzi v',
         resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
         moons: [
           {
-            name: "piazzi v-a",
+            name: 'piazzi v-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "piazzi v-b",
+            name: 'piazzi v-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1658,7 +1658,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "piazzi v-c",
+            name: 'piazzi v-c',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1669,11 +1669,11 @@ const LEVEL_10_SYSTEMS = [
         ],
       },
       {
-        name: "piazzi vi",
+        name: 'piazzi vi',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "piazzi vi-a",
+            name: 'piazzi vi-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1682,7 +1682,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "piazzi vi-b",
+            name: 'piazzi vi-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1690,7 +1690,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "piazzi vi-c",
+            name: 'piazzi vi-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1701,19 +1701,19 @@ const LEVEL_10_SYSTEMS = [
         ],
       },
       {
-        name: "piazzi vii",
+        name: 'piazzi vii',
         resources: [],
         moons: [
           {
-            name: "piazzi vii-a",
+            name: 'piazzi vii-a',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
           {
-            name: "piazzi vii-b",
+            name: 'piazzi vii-b',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
           },
           {
-            name: "piazzi vii-c",
+            name: 'piazzi vii-c',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
         ],
@@ -1721,11 +1721,11 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
   {
-    name: "procyon a",
-    level: "10",
+    name: 'procyon a',
+    level: '10',
     planets: [
       {
-        name: "procyon i",
+        name: 'procyon i',
         resources: [
           RESOURCE.CHLORINE,
           RESOURCE.COPPER,
@@ -1738,18 +1738,18 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "procyon i-a",
+            name: 'procyon i-a',
             resources: [],
           },
         ],
       },
       {
-        name: "procyon ii",
+        name: 'procyon ii',
         resources: [RESOURCE.NICKEL, RESOURCE.LEAD, RESOURCE.TITANIUM],
         moons: [],
       },
       {
-        name: "procyon iii",
+        name: 'procyon iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -1761,13 +1761,13 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "procyon iii-a",
+            name: 'procyon iii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "procyon iv",
+        name: 'procyon iv',
         resources: [
           RESOURCE.WATER,
           RESOURCE.NICKEL,
@@ -1776,39 +1776,39 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "procyon iv-a",
+            name: 'procyon iv-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "procyon v",
+        name: 'procyon v',
         resources: [],
         moons: [
           {
-            name: "procyon v-a",
+            name: 'procyon v-a',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
           {
-            name: "procyon v-b",
+            name: 'procyon v-b',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: "procyon v-c",
+            name: 'procyon v-c',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
         ],
       },
       {
-        name: "procyon vi",
+        name: 'procyon vi',
         resources: [],
         moons: [
           {
-            name: "procyon vi-a",
+            name: 'procyon vi-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "procyon vi-b",
+            name: 'procyon vi-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.IRON,
@@ -1819,7 +1819,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "procyon vi-c",
+            name: 'procyon vi-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -1834,11 +1834,11 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
   {
-    name: "tau ceti",
-    level: "10",
+    name: 'tau ceti',
+    level: '10',
     planets: [
       {
-        name: "tau ceti i",
+        name: 'tau ceti i',
         resources: [
           RESOURCE.HELIUM_3,
           RESOURCE.COPPER,
@@ -1852,7 +1852,7 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "tau ceti ii",
+        name: 'tau ceti ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.ARGON,
@@ -1861,13 +1861,13 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "tau ceti ii-a",
+            name: 'tau ceti ii-a',
             resources: [RESOURCE.WATER, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
           },
         ],
       },
       {
-        name: "tau ceti iii",
+        name: 'tau ceti iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -1880,7 +1880,7 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "tau ceti iv",
+        name: 'tau ceti iv',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -1891,7 +1891,7 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "tau ceti iv-a",
+            name: 'tau ceti iv-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -1899,13 +1899,13 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "tau ceti iv-b",
+            name: 'tau ceti iv-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "tau ceti v",
+        name: 'tau ceti v',
         resources: [
           RESOURCE.WATER,
           RESOURCE.NICKEL,
@@ -1919,7 +1919,7 @@ const LEVEL_10_SYSTEMS = [
         moons: [],
       },
       {
-        name: "tau ceti vi",
+        name: 'tau ceti vi',
         resources: [
           RESOURCE.WATER,
           RESOURCE.ALUMINUM,
@@ -1928,31 +1928,31 @@ const LEVEL_10_SYSTEMS = [
         ],
         moons: [
           {
-            name: "tau ceti vi-a",
+            name: 'tau ceti vi-a',
             resources: [RESOURCE.WATER, RESOURCE.IRON, RESOURCE.TANTALUM],
           },
         ],
       },
       {
-        name: "tau ceti vii",
+        name: 'tau ceti vii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "tau ceti vii-a",
+            name: 'tau ceti vii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "tau ceti viii",
+        name: 'tau ceti viii',
         resources: [],
         moons: [
           {
-            name: "tau ceti viii-a",
+            name: 'tau ceti viii-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "tau ceti viii-b",
+            name: 'tau ceti viii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ALUMINUM,
@@ -1963,7 +1963,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "tau ceti viii-c",
+            name: 'tau ceti viii-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -1973,7 +1973,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "tau ceti viii-d",
+            name: 'tau ceti viii-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -1982,7 +1982,7 @@ const LEVEL_10_SYSTEMS = [
             ],
           },
           {
-            name: "tau ceti ix",
+            name: 'tau ceti ix',
             resources: [],
           },
         ],
@@ -1990,11 +1990,11 @@ const LEVEL_10_SYSTEMS = [
     ],
   },
   {
-    name: "the pup",
-    level: "10",
+    name: 'the pup',
+    level: '10',
     planets: [
       {
-        name: "pup i",
+        name: 'pup i',
         resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.CAESIUM],
         moons: [],
       },
@@ -2002,10 +2002,10 @@ const LEVEL_10_SYSTEMS = [
   },
   {
     name: "van maanen's star",
-    level: "10",
+    level: '10',
     planets: [
       {
-        name: "van maanen i",
+        name: 'van maanen i',
         resources: [RESOURCE.WATER, RESOURCE.COPPER],
         moons: [],
       },
@@ -2015,11 +2015,11 @@ const LEVEL_10_SYSTEMS = [
 
 const LEVEL_15_SYSTEMS = [
   {
-    name: "altair",
-    level: "15",
+    name: 'altair',
+    level: '15',
     planets: [
       {
-        name: "altair i",
+        name: 'altair i',
         resources: [
           RESOURCE.NICKEL,
           RESOURCE.LEAD,
@@ -2033,7 +2033,7 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "altair ii",
+        name: 'altair ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.URANIUM,
@@ -2043,7 +2043,7 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "altair iii",
+        name: 'altair iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -2053,11 +2053,11 @@ const LEVEL_15_SYSTEMS = [
         ],
         moons: [
           {
-            name: "altair iii-a",
+            name: 'altair iii-a',
             resources: [],
           },
           {
-            name: "altair iii-b",
+            name: 'altair iii-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2066,7 +2066,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "altair iii-c",
+            name: 'altair iii-c',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2076,11 +2076,11 @@ const LEVEL_15_SYSTEMS = [
         ],
       },
       {
-        name: "altair iv",
+        name: 'altair iv',
         resources: [],
         moons: [
           {
-            name: "altair iv-a",
+            name: 'altair iv-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2088,7 +2088,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "altair iv-b",
+            name: 'altair iv-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2096,7 +2096,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "altair iv-c",
+            name: 'altair iv-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2107,17 +2107,17 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "altair iv-d",
+            name: 'altair iv-d',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
         ],
       },
       {
-        name: "altair v",
+        name: 'altair v',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [
           {
-            name: "altair v-a",
+            name: 'altair v-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.LEAD],
           },
         ],
@@ -2125,11 +2125,11 @@ const LEVEL_15_SYSTEMS = [
     ],
   },
   {
-    name: "andromas",
-    level: "15",
+    name: 'andromas',
+    level: '15',
     planets: [
       {
-        name: "andromas i",
+        name: 'andromas i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2143,7 +2143,7 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "andromas ii",
+        name: 'andromas ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2157,7 +2157,7 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "andromas iii",
+        name: 'andromas iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2171,39 +2171,39 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "andromas iv",
+        name: 'andromas iv',
         resources: [],
         moons: [
           {
-            name: "andromas iv-a",
+            name: 'andromas iv-a',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
         ],
       },
       {
-        name: "andromas v",
+        name: 'andromas v',
         resources: [],
         moons: [
           {
-            name: "andromas v-a",
+            name: 'andromas v-a',
             resources: [],
           },
           {
-            name: "andromas v-b",
+            name: 'andromas v-b',
             resources: [],
           },
         ],
       },
       {
-        name: "andromas vi",
+        name: 'andromas vi',
         resources: [],
         moons: [
           {
-            name: "andromas vi-a",
+            name: 'andromas vi-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
           {
-            name: "andromas vi-b",
+            name: 'andromas vi-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2220,68 +2220,68 @@ const LEVEL_15_SYSTEMS = [
     ],
   },
   {
-    name: "aranae",
-    level: "15",
+    name: 'aranae',
+    level: '15',
     planets: [
       {
-        name: "aranae i",
+        name: 'aranae i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
         moons: [],
       },
       {
-        name: "aranae ii",
+        name: 'aranae ii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "aranae ii-a",
+            name: 'aranae ii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "aranae ii-b",
+            name: 'aranae ii-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "aranae iii",
+        name: 'aranae iii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
         moons: [],
       },
       {
-        name: "aranae iv",
+        name: 'aranae iv',
         resources: [],
         moons: [
           {
-            name: "aranae iv-a",
+            name: 'aranae iv-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
           },
           {
-            name: "aranae iv-b",
+            name: 'aranae iv-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
           },
           {
-            name: "aranae iv-c",
+            name: 'aranae iv-c',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "aranae iv-d",
+            name: 'aranae iv-d',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
         ],
       },
       {
-        name: "aranae v",
+        name: 'aranae v',
         resources: [RESOURCE.WATER, RESOURCE.LEAD],
         moons: [],
       },
     ],
   },
   {
-    name: "arcturus",
-    level: "15",
+    name: 'arcturus',
+    level: '15',
     planets: [
       {
-        name: "arcturus i",
+        name: 'arcturus i',
         resources: [
           RESOURCE.HELIUM_3,
           RESOURCE.LEAD,
@@ -2291,7 +2291,7 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "arcturus ii",
+        name: 'arcturus ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2304,11 +2304,11 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "arcturus iii",
+        name: 'arcturus iii',
         resources: [],
         moons: [
           {
-            name: "arcturus iii-a",
+            name: 'arcturus iii-a',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
         ],
@@ -2316,25 +2316,25 @@ const LEVEL_15_SYSTEMS = [
     ],
   },
   {
-    name: "muphrid",
-    level: "15",
+    name: 'muphrid',
+    level: '15',
     planets: [
       {
-        name: "muphrid i",
+        name: 'muphrid i',
         resources: [RESOURCE.URANIUM, RESOURCE.IRIDIUM],
         moons: [
           {
-            name: "muphrid i-a",
+            name: 'muphrid i-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "muphrid ii",
+        name: 'muphrid ii',
         resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.URANIUM],
         moons: [
           {
-            name: "muphrid ii-a",
+            name: 'muphrid ii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2346,7 +2346,7 @@ const LEVEL_15_SYSTEMS = [
         ],
       },
       {
-        name: "muphrid iii",
+        name: 'muphrid iii',
         resources: [
           RESOURCE.NICKEL,
           RESOURCE.IRON,
@@ -2356,21 +2356,21 @@ const LEVEL_15_SYSTEMS = [
         ],
         moons: [
           {
-            name: "muphrid iii-a",
+            name: 'muphrid iii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.YTTERBIUM],
           },
           {
-            name: "muphrid iii-b",
+            name: 'muphrid iii-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "muphrid iii-c",
+            name: 'muphrid iii-c',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "muphrid iv",
+        name: 'muphrid iv',
         resources: [
           RESOURCE.WATER,
           RESOURCE.ALUMINUM,
@@ -2384,15 +2384,15 @@ const LEVEL_15_SYSTEMS = [
         moons: [],
       },
       {
-        name: "muphrid v",
+        name: 'muphrid v',
         resources: [],
         moons: [
           {
-            name: "muphrid v-a",
+            name: 'muphrid v-a',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: "muphrid v-b",
+            name: 'muphrid v-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2405,11 +2405,11 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "muphrid v-c",
+            name: 'muphrid v-c',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
           },
           {
-            name: "muphrid v-d",
+            name: 'muphrid v-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2424,15 +2424,15 @@ const LEVEL_15_SYSTEMS = [
         ],
       },
       {
-        name: "muphrid vi",
+        name: 'muphrid vi',
         resources: [],
         moons: [
           {
-            name: "muphrid vi-a",
+            name: 'muphrid vi-a',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
           },
           {
-            name: "muphrid vi-b",
+            name: 'muphrid vi-b',
             resources: [
               RESOURCE.CHLORINE,
               RESOURCE.IRON,
@@ -2441,11 +2441,11 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "muphrid vi-c",
+            name: 'muphrid vi-c',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "muphrid vi-d",
+            name: 'muphrid vi-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2456,15 +2456,15 @@ const LEVEL_15_SYSTEMS = [
         ],
       },
       {
-        name: "muphrid vii",
+        name: 'muphrid vii',
         resources: [],
         moons: [
           {
-            name: "muphrid vii-a",
+            name: 'muphrid vii-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.ANTIMONY],
           },
           {
-            name: "muphrid vii-b",
+            name: 'muphrid vii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2477,7 +2477,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "muphrid vii-c",
+            name: 'muphrid vii-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2487,11 +2487,11 @@ const LEVEL_15_SYSTEMS = [
         ],
       },
       {
-        name: "muphrid viii",
+        name: 'muphrid viii',
         resources: [],
         moons: [
           {
-            name: "muphrid viii-a",
+            name: 'muphrid viii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -2503,7 +2503,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "muphrid viii-b",
+            name: 'muphrid viii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2512,7 +2512,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "muphrid viii-c",
+            name: 'muphrid viii-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2523,7 +2523,7 @@ const LEVEL_15_SYSTEMS = [
             ],
           },
           {
-            name: "muphrid viii-d",
+            name: 'muphrid viii-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2537,26 +2537,26 @@ const LEVEL_15_SYSTEMS = [
     ],
   },
   {
-    name: "sagan",
-    level: "15",
+    name: 'sagan',
+    level: '15',
     planets: [
       {
-        name: "sagan 1",
+        name: 'sagan 1',
         resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
         moons: [],
       },
     ],
   },
   {
-    name: "sakharov",
-    level: "15",
+    name: 'sakharov',
+    level: '15',
     planets: [
       {
-        name: "bonner",
+        name: 'bonner',
         resources: [],
         moons: [
           {
-            name: "mir ii",
+            name: 'mir ii',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
@@ -2567,15 +2567,15 @@ const LEVEL_15_SYSTEMS = [
 
 const LEVEL_20_SYSTEMS = [
   {
-    name: "beta andraste",
-    level: "20",
+    name: 'beta andraste',
+    level: '20',
     planets: [
       {
-        name: "beta andraste i",
+        name: 'beta andraste i',
         resources: [],
         moons: [
           {
-            name: "beta andraste i-a",
+            name: 'beta andraste i-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2588,11 +2588,11 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "beta andraste i-b",
+            name: 'beta andraste i-b',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
           {
-            name: "beta andraste i-c",
+            name: 'beta andraste i-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -2601,7 +2601,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "beta andraste i-d",
+            name: 'beta andraste i-d',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
         ],
@@ -2609,11 +2609,11 @@ const LEVEL_20_SYSTEMS = [
     ],
   },
   {
-    name: "bradbury",
-    level: "20",
+    name: 'bradbury',
+    level: '20',
     planets: [
       {
-        name: "bradbury i",
+        name: 'bradbury i',
         resources: [
           RESOURCE.HELIUM_3,
           RESOURCE.IRON,
@@ -2622,17 +2622,17 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "bradbury i-a",
+            name: 'bradbury i-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "bradbury i-b",
+            name: 'bradbury i-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "bradbury ii",
+        name: 'bradbury ii',
         resources: [
           RESOURCE.IRON,
           RESOURCE.LEAD,
@@ -2642,7 +2642,7 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "bradbury iii",
+        name: 'bradbury iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2656,7 +2656,7 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "bradbury iv",
+        name: 'bradbury iv',
         resources: [
           RESOURCE.WATER,
           RESOURCE.URANIUM,
@@ -2665,7 +2665,7 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "bradbury iv-a",
+            name: 'bradbury iv-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2675,11 +2675,11 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "bradbury v",
+        name: 'bradbury v',
         resources: [],
         moons: [
           {
-            name: "bradbury v-a",
+            name: 'bradbury v-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2691,16 +2691,16 @@ const LEVEL_20_SYSTEMS = [
     ],
   },
   {
-    name: "eridani",
-    level: "20",
+    name: 'eridani',
+    level: '20',
     planets: [
       {
-        name: "eridani i",
+        name: 'eridani i',
         resources: [RESOURCE.CHLORINE, RESOURCE.URANIUM],
         moons: [],
       },
       {
-        name: "eridani ii",
+        name: 'eridani ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2714,7 +2714,7 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "eridani iii",
+        name: 'eridani iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.URANIUM,
@@ -2725,11 +2725,11 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "eridani iii-a",
+            name: 'eridani iii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
           },
           {
-            name: "eridani iii-b",
+            name: 'eridani iii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2742,21 +2742,21 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "eridani iii-c",
+            name: 'eridani iii-c',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "eridani iv",
+        name: 'eridani iv',
         resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.FLUORINE],
         moons: [
           {
-            name: "eridani iv-a",
+            name: 'eridani iv-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "eridani iv-b",
+            name: 'eridani iv-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2766,7 +2766,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "eridani iv-c",
+            name: 'eridani iv-c',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2776,7 +2776,7 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "eridani v",
+        name: 'eridani v',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2787,29 +2787,29 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "eridani vi",
+        name: 'eridani vi',
         resources: [],
         moons: [
           {
-            name: "eridani vi-a",
+            name: 'eridani vi-a',
             resources: [RESOURCE.WATER, RESOURCE.LEAD],
           },
         ],
       },
       {
-        name: "eridani vii",
+        name: 'eridani vii',
         resources: [],
         moons: [
           {
-            name: "eridani vii-a",
+            name: 'eridani vii-a',
             resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.NEON],
           },
           {
-            name: "eridani vii-b",
+            name: 'eridani vii-b',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
           {
-            name: "eridani vii-c",
+            name: 'eridani vii-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2824,15 +2824,15 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "eridani viii",
+        name: 'eridani viii',
         resources: [],
         moons: [
           {
-            name: "eridani viii-a",
+            name: 'eridani viii-a',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
           {
-            name: "eridani viii-b",
+            name: 'eridani viii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.HELIUM_3,
@@ -2845,7 +2845,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "eridani viii-c",
+            name: 'eridani viii-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2855,7 +2855,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "eridani viii-d",
+            name: 'eridani viii-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2870,22 +2870,22 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "eridani ix",
+        name: 'eridani ix',
         resources: [RESOURCE.WATER, RESOURCE.NICKEL],
         moons: [],
       },
     ],
   },
   {
-    name: "guniibuu",
-    level: "20",
+    name: 'guniibuu',
+    level: '20',
     planets: [
       {
-        name: "gunibuu i",
+        name: 'gunibuu i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
         moons: [
           {
-            name: "gunibuu i-a",
+            name: 'gunibuu i-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2894,7 +2894,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu i-b",
+            name: 'gunibuu i-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2904,7 +2904,7 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "gunibuu ii",
+        name: 'gunibuu ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -2918,7 +2918,7 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "gunibuu iii",
+        name: 'gunibuu iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.LEAD,
@@ -2931,21 +2931,21 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "gunibuu iii-a",
+            name: 'gunibuu iii-a',
             resources: [],
           },
           {
-            name: "gunibuu iii-b",
+            name: 'gunibuu iii-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "gunibuu iii-c",
+            name: 'gunibuu iii-c',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "gunibuu iv",
+        name: 'gunibuu iv',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -2957,11 +2957,11 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "gunibuu iv-a",
+            name: 'gunibuu iv-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "gunibuu iv-b",
+            name: 'gunibuu iv-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -2971,15 +2971,15 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "gunibuu v",
+        name: 'gunibuu v',
         resources: [],
         moons: [
           {
-            name: "gunibuu v-a",
+            name: 'gunibuu v-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
           {
-            name: "gunibuu v-b",
+            name: 'gunibuu v-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2988,7 +2988,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu v-c",
+            name: 'gunibuu v-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -2996,25 +2996,25 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu v-d",
+            name: 'gunibuu v-d',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "gunibuu v-e",
+            name: 'gunibuu v-e',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
         ],
       },
       {
-        name: "gunibuu vi",
+        name: 'gunibuu vi',
         resources: [],
         moons: [
           {
-            name: "gunibuu vi-a",
+            name: 'gunibuu vi-a',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: "gunibuu vi-b",
+            name: 'gunibuu vi-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.NICKEL,
@@ -3025,7 +3025,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu vi-c",
+            name: 'gunibuu vi-c',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3034,7 +3034,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu vi-d",
+            name: 'gunibuu vi-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.LEAD,
@@ -3043,7 +3043,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu vi-e",
+            name: 'gunibuu vi-e',
             resources: [
               RESOURCE.WATER,
               RESOURCE.LEAD,
@@ -3054,15 +3054,15 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "gunibuu vii",
+        name: 'gunibuu vii',
         resources: [],
         moons: [
           {
-            name: "gunibuu vii-a",
+            name: 'gunibuu vii-a',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
           {
-            name: "gunibuu vii-b",
+            name: 'gunibuu vii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.ARGON,
@@ -3071,7 +3071,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "gunibuu vii-c",
+            name: 'gunibuu vii-c',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
         ],
@@ -3079,11 +3079,11 @@ const LEVEL_20_SYSTEMS = [
     ],
   },
   {
-    name: "indum",
-    level: "20",
+    name: 'indum',
+    level: '20',
     planets: [
       {
-        name: "indum i",
+        name: 'indum i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -3095,13 +3095,13 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "indum i-a",
+            name: 'indum i-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
       },
       {
-        name: "indum ii",
+        name: 'indum ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.ALUMINUM,
@@ -3115,15 +3115,15 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "indum iii",
+        name: 'indum iii',
         resources: [],
         moons: [
           {
-            name: "indum iii-a",
+            name: 'indum iii-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.ANTIMONY],
           },
           {
-            name: "indum iii-b",
+            name: 'indum iii-b',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -3136,11 +3136,11 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "indum iii-c",
+            name: 'indum iii-c',
             resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
           },
           {
-            name: "indum iii-d",
+            name: 'indum iii-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -3151,23 +3151,23 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "indum iv",
+        name: 'indum iv',
         resources: [],
         moons: [
           {
-            name: "indum iv-a",
+            name: 'indum iv-a',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PLATINUM],
           },
           {
-            name: "indum iv-b",
+            name: 'indum iv-b',
             resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: "indum iv-c",
+            name: 'indum iv-c',
             resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.MERCURY],
           },
           {
-            name: "indum iv-d",
+            name: 'indum iv-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -3182,11 +3182,11 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "indum v",
+        name: 'indum v',
         resources: [],
         moons: [
           {
-            name: "indum v-a",
+            name: 'indum v-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.IRON,
@@ -3199,15 +3199,15 @@ const LEVEL_20_SYSTEMS = [
     ],
   },
   {
-    name: "kryx",
-    level: "20",
+    name: 'kryx',
+    level: '20',
     planets: [
       {
-        name: "suvorov",
+        name: 'suvorov',
         resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
         moons: [
           {
-            name: "neebas",
+            name: 'neebas',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -3220,7 +3220,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "max",
+            name: 'max',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -3232,11 +3232,11 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "rocklock",
+            name: 'rocklock',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
           {
-            name: "candore",
+            name: 'candore',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3245,7 +3245,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "nox",
+            name: 'nox',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3253,7 +3253,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "boron",
+            name: 'boron',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3261,7 +3261,7 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "ice",
+            name: 'ice',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
         ],
@@ -3269,21 +3269,21 @@ const LEVEL_20_SYSTEMS = [
     ],
   },
   {
-    name: "mcclure",
-    level: "20",
+    name: 'mcclure',
+    level: '20',
     planets: [
       {
-        name: "mcclure i",
+        name: 'mcclure i',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
         moons: [
           {
-            name: "mcclure i-a",
+            name: 'mcclure i-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
           },
         ],
       },
       {
-        name: "mcclure ii",
+        name: 'mcclure ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -3292,11 +3292,11 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "mcclure ii-a",
+            name: 'mcclure ii-a',
             resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
           {
-            name: "mcclure ii-b",
+            name: 'mcclure ii-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3304,13 +3304,13 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "mcclure ii-c",
+            name: 'mcclure ii-c',
             resources: [],
           },
         ],
       },
       {
-        name: "mcclure iii",
+        name: 'mcclure iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -3326,11 +3326,11 @@ const LEVEL_20_SYSTEMS = [
     ],
   },
   {
-    name: "oborum prime",
-    level: "20",
+    name: 'oborum prime',
+    level: '20',
     planets: [
       {
-        name: "oborum i",
+        name: 'oborum i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
@@ -3341,11 +3341,11 @@ const LEVEL_20_SYSTEMS = [
         moons: [],
       },
       {
-        name: "oborum ii",
+        name: 'oborum ii',
         resources: [],
         moons: [
           {
-            name: "oborum ii-a",
+            name: 'oborum ii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -3358,21 +3358,21 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "oborum ii-b",
+            name: 'oborum ii-b',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
         ],
       },
       {
-        name: "oborum iii",
+        name: 'oborum iii',
         resources: [],
         moons: [
           {
-            name: "oborum iii-a",
+            name: 'oborum iii-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER],
           },
           {
-            name: "oborum iii-b",
+            name: 'oborum iii-b',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3380,11 +3380,11 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "oborum iii-c",
+            name: 'oborum iii-c',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
           {
-            name: "oborum iii-d",
+            name: 'oborum iii-d',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -3394,18 +3394,18 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "oborum iv",
+        name: 'oborum iv',
         resources: [],
         moons: [],
       },
     ],
   },
   {
-    name: "ursae minoris",
-    level: "20",
+    name: 'ursae minoris',
+    level: '20',
     planets: [
       {
-        name: "ursae minor i",
+        name: 'ursae minor i',
         resources: [
           RESOURCE.COPPER,
           RESOURCE.NICKEL,
@@ -3416,7 +3416,7 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "ursae minor i-a",
+            name: 'ursae minor i-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3424,13 +3424,13 @@ const LEVEL_20_SYSTEMS = [
             ],
           },
           {
-            name: "ursae minor i-b",
+            name: 'ursae minor i-b',
             resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
           },
         ],
       },
       {
-        name: "ursae minor ii",
+        name: 'ursae minor ii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.COPPER,
@@ -3440,7 +3440,7 @@ const LEVEL_20_SYSTEMS = [
         ],
         moons: [
           {
-            name: "ursae minor ii-a",
+            name: 'ursae minor ii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -3450,7 +3450,7 @@ const LEVEL_20_SYSTEMS = [
         ],
       },
       {
-        name: "ursae minor iii",
+        name: 'ursae minor iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
