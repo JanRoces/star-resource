@@ -170,7 +170,7 @@ function Parser() {
       }
     });
 
-    console.log('planets :>> ', JSON.stringify(planets, null, 2));
+    console.log('planets: ', JSON.stringify(planets, null, 2));
   }
 
   return (
