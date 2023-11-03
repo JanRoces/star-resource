@@ -41,6 +41,46 @@ function Parser() {
 
       const str1 = item.split('\t');
 
+      if (str1.length === 3) {
+        planetName = planetName + ' ' + str1[0];
+
+        const symbol = str1[0].split(',');
+        resource = findResource(symbol[0]);
+
+        if (resource) {
+          resources.push('RESOURCE.' + resource);
+        }
+
+        if (str1[2] === 'Planet') {
+          planetName = "'" + planetName.toLowerCase() + "'";
+
+          const planetObject = {
+            name: planetName,
+            resources,
+            moons: [],
+          };
+
+          planetIndex++;
+          planetName = '';
+          resources = [];
+
+          planets.push(planetObject);
+        }
+
+        if (str1[2] === 'Moon') {
+          planetName = "'" + planetName.toLowerCase() + "'";
+
+          const moonObject = {
+            name: planetName,
+            resources,
+          };
+
+          planetName = '';
+          resources = [];
+
+          planets[planetIndex].moons.push(moonObject);
+        }
+      }
       if (str1.length === 2) {
         if (str1[1] === 'Planet' || str1[1] === 'Moon') {
           const symbol = str1[0].split(',');
