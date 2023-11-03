@@ -16,6 +16,10 @@ function Parser() {
       return 'HELIUM_3';
     }
 
+    if (resource && resource.symbol === 'IL') {
+      return 'IONIC_LIQUIDS';
+    }
+
     return resource ? resource.name.toUpperCase() : null;
   }
 
