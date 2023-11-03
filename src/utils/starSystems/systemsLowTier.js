@@ -3,7 +3,7 @@ import {
   LEVEL_25_SYSTEMS,
   LEVEL_30_SYSTEMS,
   LEVEL_35_SYSTEMS,
-} from './systems25to30';
+} from './systemsMiddleTier';
 
 const LEVEL_1_SYSTEMS = [
   {
@@ -3467,13 +3467,10 @@ const LEVEL_20_SYSTEMS = [
   },
 ];
 
-export const STAR_SYSTEMS = [
+export const LOW_TIER_SYSTEMS = [
   ...LEVEL_1_SYSTEMS,
   ...LEVEL_5_SYSTEMS,
   ...LEVEL_10_SYSTEMS,
   ...LEVEL_15_SYSTEMS,
   ...LEVEL_20_SYSTEMS,
-  ...LEVEL_25_SYSTEMS,
-  ...LEVEL_30_SYSTEMS,
-  ...LEVEL_35_SYSTEMS,
 ];

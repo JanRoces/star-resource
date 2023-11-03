@@ -1,6 +1,6 @@
 import { RESOURCE } from '../resources';
 
-export const LEVEL_25_SYSTEMS = [
+const LEVEL_25_SYSTEMS = [
   {
     name: 'delta pavonis',
     level: '25',
@@ -805,7 +805,7 @@ export const LEVEL_25_SYSTEMS = [
   },
 ];
 
-export const LEVEL_30_SYSTEMS = [
+const LEVEL_30_SYSTEMS = [
   {
     name: 'alpha andraste',
     level: '30',
@@ -1497,7 +1497,7 @@ export const LEVEL_30_SYSTEMS = [
   },
 ];
 
-export const LEVEL_35_SYSTEMS = [
+const LEVEL_35_SYSTEMS = [
   {
     name: 'al-battani',
     level: '35',
@@ -2549,4 +2549,10 @@ export const LEVEL_35_SYSTEMS = [
       },
     ],
   },
+];
+
+export const MIDDLE_TIER_SYSTEMS = [
+  ...LEVEL_25_SYSTEMS,
+  ...LEVEL_30_SYSTEMS,
+  ...LEVEL_35_SYSTEMS,
 ];

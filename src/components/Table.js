@@ -1,6 +1,6 @@
-import "../styles/Table.css";
-import { STAR_SYSTEMS } from "../utils/starSystems/systems01to20";
-import Resource from "./Resource";
+import '../styles/Table.css';
+import { ALL_STAR_SYSTEMS } from '../utils/starSystems/allStarSystems';
+import Resource from './Resource';
 
 export function formatName(str) {
   return str.replace(/\w\S*/g, (txt) => {
@@ -12,34 +12,34 @@ function Table({ filters, levels }) {
 
   const headerConfig = [
     {
-      label: "level",
-      flex: "1",
+      label: 'level',
+      flex: '1',
     },
     {
-      label: "system",
-      flex: "1",
+      label: 'system',
+      flex: '1',
     },
     {
-      label: "name",
-      flex: "1",
+      label: 'name',
+      flex: '1',
     },
     {
-      label: "type",
-      flex: "1",
+      label: 'type',
+      flex: '1',
     },
     {
-      label: "main planet",
-      flex: "1",
+      label: 'main planet',
+      flex: '1',
     },
     {
-      label: "resources",
-      flex: "3",
+      label: 'resources',
+      flex: '3',
     },
   ];
 
   const planetType = {
-    moon: "Moon",
-    planet: "Planet",
+    moon: 'Moon',
+    planet: 'Planet',
   };
 
   function renderHeader() {
@@ -79,14 +79,14 @@ function Table({ filters, levels }) {
     resources,
     alternateColor,
   }) {
-    const rowColor = alternateColor ? "#2E4A76" : "#486389";
+    const rowColor = alternateColor ? '#2E4A76' : '#486389';
 
     alternate = !alternate;
 
     return (
       <div
         className="row-container"
-        key={systemName + "-" + planetName}
+        key={systemName + '-' + planetName}
         style={{ backgroundColor: rowColor }}
       >
         <div className="column-container">
@@ -115,7 +115,7 @@ function Table({ filters, levels }) {
     let starSystems;
 
     if (levels.length) {
-      starSystems = STAR_SYSTEMS.filter((system) =>
+      starSystems = ALL_STAR_SYSTEMS.filter((system) =>
         levels.includes(system.level)
       );
     }
@@ -124,7 +124,7 @@ function Table({ filters, levels }) {
       return renderAllRows(starSystems);
     }
 
-    starSystems = starSystems || STAR_SYSTEMS;
+    starSystems = starSystems || ALL_STAR_SYSTEMS;
 
     const rows = starSystems.flatMap((system) => {
       return system.planets.flatMap((planet) => {
@@ -136,7 +136,7 @@ function Table({ filters, levels }) {
               systemName: system.name,
               planetName: planet.name,
               type: planetType.planet,
-              mainPlanet: "",
+              mainPlanet: '',
               resources: planet.resources,
               alternateColor: alternate,
             })
@@ -165,7 +165,7 @@ function Table({ filters, levels }) {
     return rows.filter((row) => row !== null);
   }
 
-  function renderAllRows(starSystems = STAR_SYSTEMS) {
+  function renderAllRows(starSystems = ALL_STAR_SYSTEMS) {
     const rows = starSystems.flatMap((system) => {
       return system.planets.flatMap((planet) => {
         const planetRow = renderRow({
@@ -173,7 +173,7 @@ function Table({ filters, levels }) {
           systemName: system.name,
           planetName: planet.name,
           type: planetType.planet,
-          mainPlanet: "",
+          mainPlanet: '',
           resources: planet.resources,
           alternateColor: alternate,
         });
