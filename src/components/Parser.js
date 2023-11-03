@@ -20,7 +20,26 @@ function Parser() {
       return 'IONIC_LIQUIDS';
     }
 
-    return resource ? resource.name.toUpperCase() : null;
+    if (resource && resource.symbol === 'Aq') {
+      return 'AQUEOUS_HEMATITE';
+    }
+
+    if (resource) {
+      switch (resource.symbol) {
+        case 'He-3':
+          return 'HELIUM_3';
+        case 'IL':
+          return 'IONIC_LIQUIDS';
+        case 'Aq':
+          return 'AQUEOUS_HEMATITE';
+        case 'R-COC':
+          return 'CARBOXYLIC_ACIDS';
+        default:
+          return resource.name.toUpperCase();
+      }
+    }
+
+    return null;
   }
 
   function parseString() {
@@ -84,6 +103,8 @@ function Parser() {
 
           planets[planetIndex].moons.push(moonObject);
         }
+
+        newObject = true;
       }
       if (str1.length === 2) {
         if (str1[1] === 'Planet' || str1[1] === 'Moon') {
