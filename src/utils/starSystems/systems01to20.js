@@ -2828,7 +2828,7 @@ const LEVEL_20_SYSTEMS = [
         resources: [],
         moons: [
           {
-            name: "eridani vii-a",
+            name: "eridani viii-a",
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
           {
