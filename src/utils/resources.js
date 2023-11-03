@@ -449,7 +449,7 @@ export const RESOURCE = {
   },
   WATER: {
     name: "water",
-    symbol: "H2O",
+    symbol: "H20",
     type: TYPE.LIQUID,
     rarity: RARITY.COMMON,
     backgroundColor: "#6FA29E",
