@@ -3021,7 +3021,7 @@ const LEVEL_20_SYSTEMS = [
               RESOURCE.LEAD,
               RESOURCE.COBALT,
               RESOURCE.MERCURY,
-              RESOURCE.LEAD,
+              RESOURCE.PALLADIUM,
             ],
           },
           {
