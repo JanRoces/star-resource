@@ -1,5 +1,9 @@
 import { RESOURCE } from '../resources';
-import { LEVEL_25_SYSTEMS, LEVEL_30_SYSTEMS } from './systems25to30';
+import {
+  LEVEL_25_SYSTEMS,
+  LEVEL_30_SYSTEMS,
+  LEVEL_35_SYSTEMS,
+} from './systems25to30';
 
 const LEVEL_1_SYSTEMS = [
   {
@@ -3471,4 +3475,5 @@ export const STAR_SYSTEMS = [
   ...LEVEL_20_SYSTEMS,
   ...LEVEL_25_SYSTEMS,
   ...LEVEL_30_SYSTEMS,
+  ...LEVEL_35_SYSTEMS,
 ];
