@@ -1,5 +1,5 @@
 import "../styles/Table.css";
-import { STAR_SYSTEMS } from "../utils/systems";
+import { STAR_SYSTEMS } from "../utils/starSystems/systems01to20";
 import Resource from "./Resource";
 
 export function formatName(str) {
