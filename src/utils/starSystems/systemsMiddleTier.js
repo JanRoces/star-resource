@@ -2551,8 +2551,1183 @@ const LEVEL_35_SYSTEMS = [
   },
 ];
 
+const LEVEL_40_SYSTEMS = [
+  {
+    name: 'beta ternion',
+    level: '40',
+    planets: [
+      {
+        name: 'beta ternion i',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.LITHIUM,
+        ],
+        moons: [
+          {
+            name: 'beta ternion i-a',
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: 'beta ternion ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.COBALT,
+          RESOURCE.PLATINUM,
+          RESOURCE.PALLADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'beta ternion iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+        ],
+        moons: [],
+      },
+      {
+        name: 'beta ternion iii-a',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.CHLOROSILANES,
+        ],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: 'freya',
+    level: '40',
+    planets: [
+      {
+        name: 'freya i',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.EUROPIUM],
+        moons: [],
+      },
+      {
+        name: 'freya ii',
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'freya iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.SILVER,
+          RESOURCE.MERCURY,
+        ],
+        moons: [],
+      },
+      {
+        name: 'freya iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+          RESOURCE.IRIDIUM,
+          RESOURCE.EUROPIUM,
+        ],
+        moons: [
+          {
+            name: 'freya iv-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: 'freya iv-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: 'freya iv-c',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: 'freya v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.COBALT,
+        ],
+        moons: [],
+      },
+      {
+        name: 'freya vi',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [],
+      },
+      {
+        name: 'freya vii',
+        resources: [],
+        moons: [
+          {
+            name: 'freya vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.FLUORINE,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.TETRAFLUORIDES,
+              RESOURCE.TITANIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'freya viii',
+        resources: [],
+        moons: [
+          {
+            name: 'freya viii-a',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+        ],
+      },
+      {
+        name: 'freya ix',
+        resources: [],
+        moons: [
+          {
+            name: 'freya ix-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.XENON,
+            ],
+          },
+          {
+            name: 'freya ix-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.PLATINUM,
+            ],
+          },
+          {
+            name: 'freya ix-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'hyla',
+    level: '40',
+    planets: [
+      {
+        name: 'hyla i',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ALKANES,
+          RESOURCE.IRIDIUM,
+          RESOURCE.MERCURY,
+        ],
+        moons: [
+          {
+            name: 'hyla i-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'hyla ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.ALUMINUM,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.FLUORINE,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.SILVER,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [
+          {
+            name: 'hyla ii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: 'hyla ii-b',
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: 'hyla iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.LEAD,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.NEODYMIUM,
+          RESOURCE.MERCURY,
+        ],
+        moons: [],
+      },
+      {
+        name: 'hyla iv',
+        resources: [],
+        moons: [
+          {
+            name: 'hyla iv-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PLATINUM],
+          },
+          {
+            name: 'hyla iv-b',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+        ],
+      },
+      {
+        name: 'hyla v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.LEAD,
+          RESOURCE.SILVER,
+          RESOURCE.NEODYMIUM,
+          RESOURCE.MERCURY,
+        ],
+        moons: [
+          {
+            name: 'hyla v-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+              RESOURCE.TANTALUM,
+              RESOURCE.VANADIUM,
+              RESOURCE.NEON,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'hyla vi',
+        resources: [],
+        moons: [
+          {
+            name: 'hyla vi-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'hyla vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+      {
+        name: 'hyla vii',
+        resources: [],
+        moons: [
+          {
+            name: 'hyla vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.LEAD,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.LITHIUM,
+              RESOURCE.TITANIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'hyla viii',
+        resources: [],
+        moons: [
+          {
+            name: 'hyla viii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.TETRAFLUORIDES,
+              RESOURCE.IONIC_LIQUIDS,
+            ],
+          },
+          {
+            name: 'hyla viii-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.CAESIUM,
+            ],
+          },
+          {
+            name: 'hyla viii-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: 'hyla viii-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.URANIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.IRIDIUM,
+              RESOURCE.PLUTONIUM,
+            ],
+          },
+          {
+            name: 'hyla viii-e',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'ixyll',
+    level: '40',
+    planets: [
+      {
+        name: 'ixyll i',
+        resources: [
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+          RESOURCE.ALKANES,
+          RESOURCE.IRIDIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'ixyll ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.ALKANES,
+          RESOURCE.GOLD,
+          RESOURCE.ANTIMONY,
+        ],
+        moons: [
+          {
+            name: 'ixyll ii-a',
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: 'ixyll iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.CHLOROSILANES,
+        ],
+        moons: [
+          {
+            name: 'ixyll iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: 'ixyll iii-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'ixyll iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.CARBOXYLIC_ACIDS,
+          RESOURCE.NEON,
+        ],
+        moons: [],
+      },
+      {
+        name: 'ixyll v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.FLUORINE,
+          RESOURCE.SILVER,
+          RESOURCE.LITHIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'ixyll vi',
+        resources: [],
+        moons: [
+          {
+            name: 'ixyll vi-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.IONIC_LIQUIDS,
+            ],
+          },
+          {
+            name: 'ixyll vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+          },
+          {
+            name: 'ixyll vi-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.ALKANES,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: 'ixyll vi-d',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+          {
+            name: 'ixyll vi-e',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.COBALT,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'ixyll vii',
+        resources: [],
+        moons: [
+          {
+            name: 'ixyll vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.COPPER,
+              RESOURCE.URANIUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.ANTIMONY,
+            ],
+          },
+          {
+            name: 'ixyll vii-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.LEAD,
+              RESOURCE.TUNGSTEN,
+              RESOURCE.GOLD,
+            ],
+          },
+          {
+            name: 'ixyll vii-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+          },
+        ],
+      },
+      {
+        name: 'ixyll viii',
+        resources: [],
+        moons: [
+          {
+            name: 'ixyll viii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.URANIUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.IRIDIUM,
+              RESOURCE.PLUTONIUM,
+            ],
+          },
+          {
+            name: 'ixyll viii-b',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+        ],
+      },
+      {
+        name: 'ixyll ix',
+        resources: [],
+        moons: [
+          {
+            name: 'ixyll ix-a',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+          {
+            name: 'ixyll ix-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: 'ixyll ix-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
+          },
+          {
+            name: 'ixyll ix-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.URANIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.VANADIUM,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'khayyam',
+    level: '40',
+    planets: [
+      {
+        name: 'khayyam i',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [
+          {
+            name: 'khayyam i-a',
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: 'khayyam ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.IRIDIUM,
+          RESOURCE.XENON,
+          RESOURCE.PLUTONIUM,
+        ],
+        moons: [
+          {
+            name: 'khayyam ii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'khayyam iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.ALKANES,
+          RESOURCE.GOLD,
+        ],
+        moons: [
+          {
+            name: 'khayyam iii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: 'khayyam iii-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.IRON,
+              RESOURCE.ALKANES,
+              RESOURCE.YTTERBIUM,
+            ],
+          },
+          {
+            name: 'khayyam iii-c',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'khayyam iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.ALKANES,
+          RESOURCE.TUNGSTEN,
+          RESOURCE.TANTALUM,
+          RESOURCE.TITANIUM,
+        ],
+        moons: [
+          {
+            name: 'khayyam iv-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: 'khayyam v',
+        resources: [],
+        moons: [
+          {
+            name: 'khayyam v-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+        ],
+      },
+      {
+        name: 'khayyam vi',
+        resources: [],
+        moons: [
+          {
+            name: 'khayyam vi-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: 'khayyam vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.TUNGSTEN],
+          },
+          {
+            name: 'khayyam vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+          {
+            name: 'khayyam vi-d',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+          {
+            name: 'khayyam vi-e',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.TETRAFLUORIDES,
+              RESOURCE.IONIC_LIQUIDS,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'moloch',
+    level: '40',
+    planets: [
+      {
+        name: 'moloch i',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+          RESOURCE.VANADIUM,
+          RESOURCE.MERCURY,
+        ],
+        moons: [
+          {
+            name: 'moloch i-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: 'moloch ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.ALUMINUM,
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.LITHIUM,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [],
+      },
+      {
+        name: 'moloch iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.FLUORINE,
+          RESOURCE.CARBOXYLIC_ACIDS,
+          RESOURCE.ANTIMONY,
+        ],
+        moons: [],
+      },
+      {
+        name: 'moloch iv',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [],
+      },
+      {
+        name: 'moloch v',
+        resources: [],
+        moons: [
+          {
+            name: 'moloch v-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'moloch v-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
+          },
+          {
+            name: 'moloch v-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.SILVER,
+            ],
+          },
+          {
+            name: 'moloch v-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.COPPER,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'moloch vi',
+        resources: [],
+        moons: [
+          {
+            name: 'moloch vi-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'moloch vi-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NICKEL,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.IRIDIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'moloch vii',
+        resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: 'nikola',
+    level: '40',
+    planets: [
+      {
+        name: 'nikola i',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.ALUMINUM,
+          RESOURCE.IRON,
+          RESOURCE.ARGON,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.ALKANES,
+          RESOURCE.TANTALUM,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [],
+      },
+      {
+        name: 'nikola ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.TUNGSTEN,
+          RESOURCE.PLUTONIUM,
+        ],
+        moons: [
+          {
+            name: 'nikola ii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'nikola iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+          RESOURCE.ALKANES,
+          RESOURCE.TANTALUM,
+        ],
+        moons: [
+          {
+            name: 'nikola iii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: 'nikola iii-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'nikola iv',
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.NEODYMIUM,
+        ],
+        moons: [
+          {
+            name: 'nikola iv-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'nikola v',
+        resources: [
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.NEODYMIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'nikola vi',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [
+          {
+            name: 'nikola vi-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+          {
+            name: 'nikola vi-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'nikola vii',
+        resources: [],
+        moons: [
+          {
+            name: 'nikola vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+              RESOURCE.FLUORINE,
+              RESOURCE.COBALT,
+              RESOURCE.IRIDIUM,
+              RESOURCE.PLATINUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'nikola viii',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [
+          {
+            name: 'nikola viii-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+      {
+        name: 'nikola ix',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+        moons: [],
+      },
+      {
+        name: 'nikola x',
+        resources: [],
+        moons: [
+          {
+            name: 'nikola x-a',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'nirvana',
+    level: '40',
+    planets: [
+      {
+        name: 'nirvana i',
+        resources: [
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.SILVER,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'nirvana ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.FLUORINE,
+          RESOURCE.TETRAFLUORIDES,
+          RESOURCE.VANADIUM,
+          RESOURCE.IONIC_LIQUIDS,
+        ],
+        moons: [
+          {
+            name: 'nirvana ii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
+          },
+        ],
+      },
+      {
+        name: 'nirvana iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [
+          {
+            name: 'nirvana iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'nirvana iv',
+        resources: [],
+        moons: [
+          {
+            name: 'nirvana iv-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Rasalhague',
+    level: '40',
+    planets: [
+      {
+        name: 'rasalhague i',
+        resources: [
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.ALKANES,
+          RESOURCE.YTTERBIUM,
+        ],
+        moons: [
+          {
+            name: 'rasalhague i-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'rasalhague ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.COBALT,
+          RESOURCE.CAESIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'rasalhague iii',
+        resources: [],
+        moons: [
+          {
+            name: 'rasalhague iii-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+          },
+          {
+            name: 'rasalhague iii-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.GOLD,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'rasalhague iv',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+        moons: [],
+      },
+    ],
+  },
+];
+
 export const MIDDLE_TIER_SYSTEMS = [
   ...LEVEL_25_SYSTEMS,
   ...LEVEL_30_SYSTEMS,
   ...LEVEL_35_SYSTEMS,
+  ...LEVEL_40_SYSTEMS,
 ];
