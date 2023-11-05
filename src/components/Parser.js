@@ -12,6 +12,14 @@ function Parser() {
   function findResource(symbol) {
     const resource = resourceDB.find((r) => r.symbol === symbol);
 
+    if (symbol === 'None') {
+      return null;
+    }
+
+    if (!resource && typeof symbol === 'string') {
+      return 'appendName';
+    }
+
     if (resource && resource.symbol === 'He-3') {
       return 'HELIUM_3';
     }
@@ -67,8 +75,8 @@ function Parser() {
       if (str1.length === 3) {
         planetName = planetName + ' ' + str1[0];
 
-        const symbol = str1[0].split(',');
-        resource = findResource(symbol[0]);
+        const symbol = str1[1].split(',');
+        resource = findResource(symbol[1]);
 
         if (resource) {
           resources.push('RESOURCE.' + resource);
@@ -105,8 +113,7 @@ function Parser() {
         }
 
         newObject = true;
-      }
-      if (str1.length === 2) {
+      } else if (str1.length === 2) {
         if (str1[1] === 'Planet' || str1[1] === 'Moon') {
           const symbol = str1[0].split(',');
 
@@ -163,7 +170,11 @@ function Parser() {
         resource = findResource(symbol[0]);
 
         if (resource) {
-          resources.push('RESOURCE.' + resource);
+          if (resource === 'appendName') {
+            planetName = planetName + ' ' + str1[0];
+          } else {
+            resources.push('RESOURCE.' + resource);
+          }
         }
 
         return;
@@ -173,10 +184,21 @@ function Parser() {
     console.log('planets: ', JSON.stringify(planets, null, 2));
   }
 
+  function clearText() {
+    setInputText('');
+  }
+
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        gap: '20px',
+        justifyContent: 'center',
+        marginTop: '20px',
+      }}>
       <input type="text" value={inputText} onChange={changeText}></input>
       <button onClick={parseString}>Parse</button>
+      <button onClick={clearText}>Reset</button>
     </div>
   );
 }
