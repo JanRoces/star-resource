@@ -3725,124 +3725,183 @@ const LEVEL_40_SYSTEMS = [
   },
 ];
 
-const LEVEL_50_SYSTEMS = [
+const LEVEL_45_SYSTEMS = [
   {
-    name: 'alchiba',
-    level: '50',
+    name: 'alpha marae',
+    level: '45',
     planets: [
       {
-        name: 'alchiba i',
+        name: 'alpha marae i',
         resources: [
           RESOURCE.NICKEL,
           RESOURCE.LEAD,
+          RESOURCE.URANIUM,
           RESOURCE.COBALT,
-          RESOURCE.PALLADIUM,
+          RESOURCE.SILVER,
+          RESOURCE.VANADIUM,
         ],
         moons: [],
       },
       {
-        name: 'alchiba ii',
-        resources: [
-          RESOURCE.IRON,
-          RESOURCE.LEAD,
-          RESOURCE.URANIUM,
-          RESOURCE.ALKANES,
-          RESOURCE.SILVER,
-          RESOURCE.IRIDIUM,
-        ],
+        name: 'alpha marae ii',
+        resources: [],
         moons: [
           {
-            name: 'alchiba ii-a',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+            name: 'alpha marae ii-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
         ],
       },
       {
-        name: 'alchiba iii',
+        name: 'alpha marae iii',
         resources: [],
         moons: [
           {
-            name: 'alchiba iii-a',
+            name: 'alpha marae iii-a',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+          {
+            name: 'alpha marae iii-b',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+          {
+            name: 'alpha marae iii-c',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+          {
+            name: 'alpha marae iii-d',
             resources: [
               RESOURCE.WATER,
-              RESOURCE.HELIUM_3,
-              RESOURCE.ALUMINUM,
-              RESOURCE.LEAD,
-              RESOURCE.TUNGSTEN,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.IRIDIUM,
+              RESOURCE.LITHIUM,
             ],
           },
+        ],
+      },
+      {
+        name: 'alpha marae iv',
+        resources: [],
+        moons: [
           {
-            name: 'alchiba iii-b',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+            name: 'alpha marae iv-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
           {
-            name: 'alchiba iii-c',
+            name: 'alpha marae iv-b',
             resources: [
               RESOURCE.WATER,
-              RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
               RESOURCE.NICKEL,
+              RESOURCE.IRON,
               RESOURCE.BERYLLIUM,
               RESOURCE.COBALT,
-              RESOURCE.NEODYMIUM,
-              RESOURCE.PLATINUM,
+              RESOURCE.ALKANES,
             ],
           },
         ],
       },
       {
-        name: 'alchiba iv',
+        name: 'alpha marae v',
         resources: [
-          RESOURCE.WATER,
-          RESOURCE.COPPER,
-          RESOURCE.LEAD,
-          RESOURCE.URANIUM,
-          RESOURCE.IRIDIUM,
-          RESOURCE.TETRAFLUORIDES,
-          RESOURCE.VANADIUM,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.EUROPIUM,
         ],
-        moons: [
-          {
-            name: 'alchiba iv-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.COPPER,
-              RESOURCE.NICKEL,
-              RESOURCE.LEAD,
-              RESOURCE.ARGON,
-              RESOURCE.FLUORINE,
-              RESOURCE.COBALT,
-            ],
-          },
-        ],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: 'bara',
+    level: '45',
+    planets: [
+      {
+        name: 'bara i',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+        moons: [],
       },
       {
-        name: 'alchiba v',
-        resources: [
-          RESOURCE.WATER,
-          RESOURCE.LEAD,
-          RESOURCE.URANIUM,
-          RESOURCE.ARGON,
-          RESOURCE.IRIDIUM,
-        ],
+        name: 'bara ii',
+        resources: [RESOURCE.IRON, RESOURCE.URANIUM, RESOURCE.IRIDIUM],
         moons: [
           {
-            name: 'alchiba v-a',
+            name: 'bara ii-a',
             resources: [
               RESOURCE.HELIUM_3,
-              RESOURCE.IRON,
-              RESOURCE.ALKANES,
-              RESOURCE.YTTERBIUM,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
             ],
           },
         ],
       },
       {
-        name: 'alchiba vi',
+        name: 'bara iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.ALKANES,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [
+          {
+            name: 'bara iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'bara iv',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
+        moons: [],
+      },
+      {
+        name: 'bara v',
         resources: [],
         moons: [
           {
-            name: 'alchiba vi-a',
+            name: 'bara v-a',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.TITANIUM],
+          },
+        ],
+      },
+      {
+        name: 'bara vi',
+        resources: [],
+        moons: [
+          {
+            name: 'bara vi-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: 'bara vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+          },
+          {
+            name: 'bara vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
+          },
+        ],
+      },
+      {
+        name: 'bara vii',
+        resources: [],
+        moons: [
+          {
+            name: 'bara vii-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
@@ -3851,88 +3910,28 @@ const LEVEL_50_SYSTEMS = [
             ],
           },
           {
-            name: 'alchiba vi-b',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.COPPER,
-              RESOURCE.TETRAFLUORIDES,
-            ],
-          },
-          {
-            name: 'alchiba vi-c',
+            name: 'bara vii-b',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
-        ],
-      },
-      {
-        name: 'alchiba vii',
-        resources: [],
-        moons: [
           {
-            name: 'alchiba vii-a',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER],
-          },
-          {
-            name: 'alchiba vii-b',
+            name: 'bara vii-c',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
-              RESOURCE.COPPER,
-              RESOURCE.NICKEL,
-              RESOURCE.LEAD,
-              RESOURCE.COBALT,
-              RESOURCE.TETRAFLUORIDES,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
             ],
           },
           {
-            name: 'alchiba vii-c',
-            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.MERCURY],
-          },
-          {
-            name: 'alchiba vii-d',
-            resources: [RESOURCE.WATER, RESOURCE.LEAD],
-          },
-        ],
-      },
-      {
-        name: 'alchiba viii',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
-        moons: [
-          {
-            name: 'alchiba viii-a',
-            resources: [RESOURCE.WATER, RESOURCE.LEAD],
-          },
-          {
-            name: 'alchiba viii-b',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
-          },
-        ],
-      },
-      {
-        name: 'alchiba ix',
-        resources: [],
-        moons: [
-          {
-            name: 'alchiba ix-a',
-            resources: [RESOURCE.WATER, RESOURCE.ARGON],
-          },
-        ],
-      },
-      {
-        name: 'alchiba x',
-        resources: [],
-        moons: [
-          {
-            name: 'alchiba x-a',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
-          },
-          {
-            name: 'alchiba x-b',
+            name: 'bara vii-d',
             resources: [
               RESOURCE.WATER,
-              RESOURCE.LEAD,
-              RESOURCE.ARGON,
-              RESOURCE.BENZENE,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.LITHIUM,
             ],
           },
         ],
@@ -3940,60 +3939,246 @@ const LEVEL_50_SYSTEMS = [
     ],
   },
   {
-    name: 'bannoc',
-    level: '50',
+    name: 'beta marae',
+    level: '45',
     planets: [
       {
-        name: 'bannoc i',
-        resources: [
-          RESOURCE.NICKEL,
-          RESOURCE.LEAD,
-          RESOURCE.URANIUM,
-          RESOURCE.COBALT,
-          RESOURCE.SILVER,
-          RESOURCE.MERCURY,
-        ],
-        moons: [],
-      },
-      {
-        name: 'bannoc ii',
-        resources: [
-          RESOURCE.WATER,
-          RESOURCE.ALUMINUM,
-          RESOURCE.NICKEL,
-          RESOURCE.URANIUM,
-          RESOURCE.ARGON,
-          RESOURCE.IRIDIUM,
-          RESOURCE.PLATINUM,
-          RESOURCE.VANADIUM,
-        ],
-        moons: [],
-      },
-      {
-        name: 'bannoc iii',
+        name: 'beta marae i',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
           RESOURCE.COPPER,
-          RESOURCE.CHLOROSILANES,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
         ],
         moons: [
           {
-            name: 'bannoc iii-a',
+            name: 'beta marae i-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'beta marae ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.FLUORINE,
+          RESOURCE.COBALT,
+          RESOURCE.TUNGSTEN,
+          RESOURCE.PALLADIUM,
+        ],
+        moons: [
+          {
+            name: 'beta marae ii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: 'beta marae ii-b',
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: 'beta marae iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.LEAD,
+          RESOURCE.IONIC_LIQUIDS,
+        ],
+        moons: [
+          {
+            name: 'beta marae iii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'beta marae iv',
+        resources: [],
+        moons: [
+          {
+            name: 'beta marae iv-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PALLADIUM],
+          },
+          {
+            name: 'beta marae iv-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.IRIDIUM,
+              RESOURCE.VANADIUM,
+            ],
+          },
+          {
+            name: 'beta marae iv-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'beta marae iv-d',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+        ],
+      },
+      {
+        name: 'beta marae v',
+        resources: [],
+        moons: [
+          {
+            name: 'beta marae v-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: 'beta marae v-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.ANTIMONY],
+          },
+          {
+            name: 'beta marae v-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+              RESOURCE.ALKANES,
+              RESOURCE.VANADIUM,
+              RESOURCE.PLUTONIUM,
+            ],
+          },
+          {
+            name: 'beta marae v-d',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+        ],
+      },
+      {
+        name: 'beta marae vi',
+        resources: [],
+        moons: [
+          {
+            name: 'beta marae vi-a',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: 'beta marae vi-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: 'beta marae vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'heinlein',
+    level: '45',
+    planets: [
+      {
+        name: 'heinlein i',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [],
+      },
+      {
+        name: 'heinlein ii',
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [
+          {
+            name: 'heinlein ii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
               RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: 'heinlein ii-b',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'heinlein iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.IRIDIUM,
+          RESOURCE.PALLADIUM,
+          RESOURCE.NEON,
+        ],
+        moons: [
+          {
+            name: 'heinlein iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.EUROPIUM,
             ],
           },
         ],
       },
       {
-        name: 'bannoc iv',
+        name: 'heinlein iv',
         resources: [],
         moons: [
           {
-            name: 'bannoc iv-a',
+            name: 'heinlein iv-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'heinlein iv-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.ALKANES,
+              RESOURCE.SILVER,
+              RESOURCE.MERCURY,
+              RESOURCE.CAESIUM,
+            ],
+          },
+          {
+            name: 'heinlein iv-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.NICKEL],
+          },
+          {
+            name: 'heinlein iv-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ARGON,
+              RESOURCE.CARBOXYLIC_ACIDS,
+            ],
+          },
+          {
+            name: 'heinlein iv-e',
             resources: [
               RESOURCE.WATER,
               RESOURCE.CHLORINE,
@@ -4001,219 +4186,233 @@ const LEVEL_50_SYSTEMS = [
               RESOURCE.CAESIUM,
             ],
           },
+        ],
+      },
+      {
+        name: 'heinlein v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.COBALT,
+          RESOURCE.SILVER,
+          RESOURCE.CARBOXYLIC_ACIDS,
+          RESOURCE.PALLADIUM,
+        ],
+        moons: [
           {
-            name: 'bannoc iv-b',
-            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.SILVER],
+            name: 'heinlein v-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: 'heinlein v-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+          {
+            name: 'heinlein v-c',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
           },
         ],
+      },
+      {
+        name: 'heinlein vi',
+        resources: [],
+        moons: [
+          {
+            name: 'heinlein vi-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.COBALT,
+              RESOURCE.XENON,
+              RESOURCE.PALLADIUM,
+            ],
+          },
+          {
+            name: 'heinlein vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: 'heinlein vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.LITHIUM],
+          },
+          {
+            name: 'heinlein vi-d',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: 'heinlein vi-e',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+        ],
+      },
+      {
+        name: 'heinlein vii',
+        resources: [RESOURCE.WATER, RESOURCE.LEAD],
+        moons: [],
       },
     ],
   },
   {
-    name: 'bannoc secondus',
-    level: '50',
+    name: 'linnaeus',
+    level: '45',
     planets: [
       {
-        name: 'bannoc secondus i',
+        name: 'linnaeus i',
+        resources: [RESOURCE.URANIUM, RESOURCE.IRIDIUM],
+        moons: [],
+      },
+      {
+        name: 'linnaeus ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.SILVER,
+        ],
+        moons: [
+          {
+            name: 'linnaeus ii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
+          },
+        ],
+      },
+      {
+        name: 'linnaeus iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.FLUORINE,
+          RESOURCE.TETRAFLUORIDES,
+        ],
+        moons: [
+          {
+            name: 'linnaeus iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'linnaeus iv',
+        resources: [],
+        moons: [
+          {
+            name: 'linnaeus iv-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.IRIDIUM,
+              RESOURCE.PLATINUM,
+            ],
+          },
+          {
+            name: 'linnaeus iv-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.ALKANES,
+              RESOURCE.YTTERBIUM,
+            ],
+          },
+          {
+            name: 'linnaeus iv-c',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.LEAD],
+          },
+        ],
+      },
+      {
+        name: 'linnaeus v',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.EUROPIUM],
+        moons: [],
+      },
+      {
+        name: 'linnaeus vi',
+        resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+        moons: [],
+      },
+      {
+        name: 'linnaeus vii',
         resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.NEODYMIUM],
         moons: [],
       },
     ],
   },
   {
-    name: 'delta vulpes',
-    level: '50',
+    name: 'ophion',
+    level: '45',
     planets: [
       {
-        name: 'delta vulpes i',
-        resources: [],
-        moons: [],
-      },
-      {
-        name: 'delta vulpes ii',
-        resources: [
-          RESOURCE.WATER,
-          RESOURCE.NICKEL,
-          RESOURCE.IRON,
-          RESOURCE.COBALT,
-        ],
-        moons: [],
-      },
-      {
-        name: 'delta vulpes iii',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
-        moons: [
-          {
-            name: 'delta vulpes iii-a',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
-          },
-        ],
-      },
-      {
-        name: 'delta vulpes iv',
+        name: 'ophion i',
         resources: [],
         moons: [
           {
-            name: 'delta vulpes iv-a',
-            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
-          },
-        ],
-      },
-      {
-        name: 'delta vulpes v',
-        resources: [],
-        moons: [
-          {
-            name: 'delta vulpes v-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.ARGON,
-              RESOURCE.BENZENE,
-              RESOURCE.CARBOXYLIC_ACIDS,
-            ],
-          },
-          {
-            name: 'delta vulpes v-b',
-            resources: [RESOURCE.WATER, RESOURCE.ARGON],
-          },
-          {
-            name: 'delta vulpes v-c',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.HELIUM_3,
-              RESOURCE.ALUMINUM,
-              RESOURCE.CHLORINE,
-              RESOURCE.COPPER,
-              RESOURCE.IRON,
-              RESOURCE.URANIUM,
-              RESOURCE.TETRAFLUORIDES,
-            ],
-          },
-          {
-            name: 'delta vulpes v-d',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
-          },
-          {
-            name: 'delta vulpes v-e',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.ARGON,
-              RESOURCE.BENZENE,
-              RESOURCE.NEON,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'delta vulpes vi',
-        resources: [],
-        moons: [
-          {
-            name: 'delta vulpes vi-a',
+            name: 'ophion i-a',
             resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
           },
         ],
-      },
-      {
-        name: 'delta vulpes vii',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.ALKANES],
-        moons: [],
       },
     ],
   },
   {
-    name: 'gamma vulpes',
-    level: '50',
+    name: 'rutherford',
+    level: '45',
     planets: [
       {
-        name: 'gamma vulpes i',
+        name: 'rutherford i',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [
+          {
+            name: 'rutherford i-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: 'rutherford i-b',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: 'rutherford ii',
         resources: [
-          RESOURCE.WATER,
           RESOURCE.CHLORINE,
-          RESOURCE.COPPER,
-          RESOURCE.CHLOROSILANES,
-          RESOURCE.LITHIUM,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.PLATINUM,
         ],
-        moons: [],
-      },
-      {
-        name: 'gamma vulpes ii',
-        resources: [],
         moons: [
           {
-            name: 'gamma vulpes ii-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.COPPER,
-              RESOURCE.NICKEL,
-              RESOURCE.IRON,
-              RESOURCE.URANIUM,
-              RESOURCE.ARGON,
-              RESOURCE.COBALT,
-              RESOURCE.IRIDIUM,
-            ],
-          },
-          {
-            name: 'gamma vulpes ii-b',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.COPPER,
-              RESOURCE.TETRAFLUORIDES,
-            ],
-          },
-          {
-            name: 'gamma vulpes ii-c',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER],
-          },
-          {
-            name: 'gamma vulpes ii-d',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.ALUMINUM,
-              RESOURCE.CHLORINE,
-              RESOURCE.NICKEL,
-              RESOURCE.ARGON,
-              RESOURCE.BENZENE,
-              RESOURCE.COBALT,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'gamma vulpes iii',
-        resources: [],
-        moons: [
-          {
-            name: 'gamma vulpes iii-a',
-            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
-          },
-        ],
-      },
-      {
-        name: 'gamma vulpes iv',
-        resources: [],
-        moons: [
-          {
-            name: 'gamma vulpes iv-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.LEAD,
-              RESOURCE.URANIUM,
-              RESOURCE.TUNGSTEN,
-              RESOURCE.TITANIUM,
-              RESOURCE.DYSPROSIUM,
-            ],
-          },
-          {
-            name: 'gamma vulpes iv-b',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
-          },
-          {
-            name: 'gamma vulpes iv-c',
-            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
-          },
-          {
-            name: 'gamma vulpes iv-d',
+            name: 'rutherford ii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
@@ -4222,442 +4421,161 @@ const LEVEL_50_SYSTEMS = [
           },
         ],
       },
-    ],
-  },
-  {
-    name: 'xi ophiuchi',
-    level: '50',
-    planets: [
       {
-        name: 'xi ophiuchi i',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
-        moons: [],
-      },
-      {
-        name: 'xi ophiuchi ii',
-        resources: [
-          RESOURCE.WATER,
-          RESOURCE.NICKEL,
-          RESOURCE.IRON,
-          RESOURCE.URANIUM,
-          RESOURCE.VANADIUM,
-        ],
-        moons: [],
-      },
-      {
-        name: 'xi ophiuchi iii',
-        resources: [
-          RESOURCE.COPPER,
-          RESOURCE.IRON,
-          RESOURCE.URANIUM,
-          RESOURCE.FLUORINE,
-          RESOURCE.ALKANES,
-          RESOURCE.IRIDIUM,
-          RESOURCE.ANTIMONY,
-          RESOURCE.YTTERBIUM,
-        ],
-        moons: [
-          {
-            name: 'xi ophiuchi iii-a',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
-          },
-        ],
-      },
-      {
-        name: 'xi ophiuchi iv',
+        name: 'rutherford iii',
         resources: [
           RESOURCE.WATER,
           RESOURCE.CHLORINE,
-          RESOURCE.NICKEL,
-          RESOURCE.FLUORINE,
-        ],
-        moons: [],
-      },
-      {
-        name: 'xi ophiuchi v',
-        resources: [
-          RESOURCE.WATER,
-          RESOURCE.COPPER,
-          RESOURCE.NICKEL,
           RESOURCE.LEAD,
-          RESOURCE.FLUORINE,
-          RESOURCE.COBALT,
-          RESOURCE.TETRAFLUORIDES,
-          RESOURCE.PLATINUM,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.LITHIUM,
         ],
         moons: [
           {
-            name: 'xi ophiuchi v-a',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.YTTERBIUM],
-          },
-        ],
-      },
-      {
-        name: 'xi ophiuchi vi',
-        resources: [],
-        moons: [
-          {
-            name: 'xi ophiuchi vi-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.CHLOROSILANES,
-            ],
-          },
-          {
-            name: 'xi ophiuchi vi-b',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
-          },
-          {
-            name: 'xi ophiuchi vi-c',
-            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
-          },
-          {
-            name: 'xi ophiuchi vi-d',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.NICKEL,
-              RESOURCE.LEAD,
-              RESOURCE.URANIUM,
-              RESOURCE.COBALT,
-              RESOURCE.IRIDIUM,
-              RESOURCE.PLATINUM,
-            ],
-          },
-          {
-            name: 'xi ophiuchi vi-e',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.LEAD,
-              RESOURCE.URANIUM,
-              RESOURCE.TUNGSTEN,
-              RESOURCE.IRIDIUM,
-              RESOURCE.VANADIUM,
-              RESOURCE.DYSPROSIUM,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'xi ophiuchi vii',
-        resources: [],
-        moons: [
-          {
-            name: 'xi ophiuchi vii-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.NICKEL,
-              RESOURCE.LEAD,
-              RESOURCE.CHLOROSILANES,
-              RESOURCE.SILVER,
-              RESOURCE.LITHIUM,
-              RESOURCE.MERCURY,
-            ],
-          },
-          {
-            name: 'xi ophiuchi vii-b',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.NICKEL,
-              RESOURCE.LEAD,
-              RESOURCE.ARGON,
-              RESOURCE.COBALT,
-              RESOURCE.PLATINUM,
-              RESOURCE.CARBOXYLIC_ACIDS,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'xi ophiuchi viii',
-        resources: [],
-        moons: [
-          {
-            name: 'xi ophiuchi viii-a',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER],
-          },
-          {
-            name: 'xi ophiuchi viii-b',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.NICKEL,
-              RESOURCE.IRON,
-            ],
-          },
-          {
-            name: 'xi ophiuchi viii-c',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.HELIUM_3,
-              RESOURCE.ALUMINUM,
-              RESOURCE.LEAD,
-              RESOURCE.URANIUM,
-              RESOURCE.ARGON,
-              RESOURCE.SILVER,
-              RESOURCE.VANADIUM,
-            ],
-          },
-          {
-            name: 'xi ophiuchi viii-d',
-            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
-          },
-          {
-            name: 'xi ophiuchi viii-e',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.CHLOROSILANES,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'xi ophiuchi ix',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
-        moons: [],
-      },
-    ],
-  },
-  {
-    name: 'zeta ophiuchi',
-    level: '50',
-    planets: [
-      {
-        name: 'zeta ophiuchi i',
-        resources: [
-          RESOURCE.WATER,
-          RESOURCE.CHLORINE,
-          RESOURCE.IRON,
-          RESOURCE.LEAD,
-          RESOURCE.ALKANES,
-          RESOURCE.SILVER,
-          RESOURCE.TANTALUM,
-          RESOURCE.YTTERBIUM,
-        ],
-        moons: [],
-      },
-      {
-        name: 'zeta ophiuchi ii',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
-        moons: [],
-      },
-      {
-        name: 'zeta ophiuchi iii',
-        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
-        moons: [
-          {
-            name: 'zeta ophiuchi iii-a',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
-          },
-        ],
-      },
-      {
-        name: 'zeta ophiuchi iv',
-        resources: [],
-        moons: [
-          {
-            name: 'zeta ophiuchi iv-a',
-            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
-          },
-          {
-            name: 'zeta ophiuchi iv-b',
-            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
-          },
-          {
-            name: 'zeta ophiuchi iv-c',
-            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
-          },
-          {
-            name: 'zeta ophiuchi iv-d',
+            name: 'rutherford iii-a',
             resources: [
               RESOURCE.HELIUM_3,
               RESOURCE.ALUMINUM,
               RESOURCE.BERYLLIUM,
             ],
           },
-          {
-            name: 'zeta ophiuchi iv-e',
-            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.SILVER],
-          },
         ],
       },
       {
-        name: 'zeta ophiuchi v',
+        name: 'rutherford iv',
         resources: [],
         moons: [
           {
-            name: 'zeta ophiuchi v-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.ARGON,
-              RESOURCE.BENZENE,
-              RESOURCE.NEON,
-            ],
+            name: 'rutherford iv-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: 'zeta ophiuchi v-b',
-            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
-          },
-        ],
-      },
-      {
-        name: 'zeta ophiuchi vi',
-        resources: [],
-        moons: [
-          {
-            name: 'zeta ophiuchi vi-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.COPPER,
-              RESOURCE.IRON,
-              RESOURCE.LEAD,
-              RESOURCE.URANIUM,
-              RESOURCE.FLUORINE,
-              RESOURCE.GOLD,
-              RESOURCE.ANTIMONY,
-            ],
+            name: 'rutherford iv-b',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
           },
           {
-            name: 'zeta ophiuchi vi-b',
+            name: 'rutherford iv-c',
             resources: [RESOURCE.WATER, RESOURCE.ARGON],
           },
           {
-            name: 'zeta ophiuchi vi-c',
+            name: 'rutherford iv-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.IRIDIUM,
+              RESOURCE.VANADIUM,
+            ],
+          },
+          {
+            name: 'rutherford iv-e',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ARGON,
+              RESOURCE.CARBOXYLIC_ACIDS,
+              RESOURCE.NEON,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'rutherford v',
+        resources: [],
+        moons: [
+          {
+            name: 'rutherford v-a',
             resources: [
               RESOURCE.WATER,
               RESOURCE.COPPER,
-              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.TITANIUM,
+            ],
+          },
+          {
+            name: 'rutherford v-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
               RESOURCE.LEAD,
               RESOURCE.URANIUM,
-              RESOURCE.COBALT,
-              RESOURCE.PLATINUM,
-            ],
-          },
-          {
-            name: 'zeta ophiuchi vi-d',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
               RESOURCE.CHLOROSILANES,
+              RESOURCE.MERCURY,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'rutherford vi',
+        resources: [],
+        moons: [
+          {
+            name: 'rutherford vi-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.URANIUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
+              RESOURCE.CAESIUM,
             ],
           },
           {
-            name: 'zeta ophiuchi vi-e',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.COPPER,
-              RESOURCE.NICKEL,
-              RESOURCE.URANIUM,
-              RESOURCE.IRIDIUM,
-              RESOURCE.LITHIUM,
-              RESOURCE.PLUTONIUM,
-            ],
+            name: 'rutherford vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.ANTIMONY],
+          },
+          {
+            name: 'rutherford vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: 'rutherford vi-d',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
           },
         ],
       },
     ],
   },
   {
-    name: 'zosma',
-    level: '50',
+    name: 'tidacha',
+    level: '45',
     planets: [
       {
-        name: 'zosma i',
-        resources: [RESOURCE.NICKEL, RESOURCE.LEAD, RESOURCE.COBALT],
-        moons: [
-          {
-            name: 'zosma i-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.CHLOROSILANES,
-              RESOURCE.XENON,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'zosma ii',
+        name: 'tidacha i',
         resources: [
           RESOURCE.WATER,
+          RESOURCE.ALUMINUM,
           RESOURCE.CHLORINE,
           RESOURCE.IRON,
-          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
           RESOURCE.ALKANES,
-          RESOURCE.IRIDIUM,
-          RESOURCE.TANTALUM,
+          RESOURCE.BENZENE,
+          RESOURCE.CARBOXYLIC_ACIDS,
         ],
-        moons: [],
-      },
-      {
-        name: 'zosma iii',
-        resources: [],
         moons: [
           {
-            name: 'zosma iii-a',
+            name: 'tidacha i-a',
             resources: [
-              RESOURCE.WATER,
               RESOURCE.HELIUM_3,
-              RESOURCE.CHLORINE,
-              RESOURCE.URANIUM,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'zosma iv',
-        resources: [],
-        moons: [
-          {
-            name: 'zosma iv-a',
-            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
-          },
-          {
-            name: 'zosma iv-b',
-            resources: [RESOURCE.WATER, RESOURCE.LEAD],
-          },
-          {
-            name: 'zosma iv-c',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.NICKEL,
-              RESOURCE.IRON,
-              RESOURCE.LEAD,
-              RESOURCE.COBALT,
-              RESOURCE.ALKANES,
-              RESOURCE.PALLADIUM,
-            ],
-          },
-        ],
-      },
-      {
-        name: 'zosma v',
-        resources: [],
-        moons: [
-          {
-            name: 'zosma v-a',
-            resources: [
-              RESOURCE.WATER,
-              RESOURCE.CHLORINE,
-              RESOURCE.IRON,
-              RESOURCE.LEAD,
-              RESOURCE.URANIUM,
-              RESOURCE.CHLOROSILANES,
-              RESOURCE.ALKANES,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+              RESOURCE.NEODYMIUM,
             ],
           },
           {
-            name: 'zosma v-b',
-            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.BENZENE],
+            name: 'tidacha i-b',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.TANTALUM],
           },
           {
-            name: 'zosma v-c',
-            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+            name: 'tidacha i-c',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON, RESOURCE.YTTERBIUM],
           },
         ],
       },
@@ -4670,5 +4588,5 @@ export const MIDDLE_TIER_SYSTEMS = [
   ...LEVEL_30_SYSTEMS,
   ...LEVEL_35_SYSTEMS,
   ...LEVEL_40_SYSTEMS,
-  ...LEVEL_50_SYSTEMS,
+  ...LEVEL_45_SYSTEMS,
 ];
