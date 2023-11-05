@@ -63,14 +63,68 @@ function Parser() {
     let planetIndex = -1;
 
     str.forEach((item, index) => {
+      const str1 = item.split('\t');
+
       if (index === 0 || newObject) {
-        planetName = item;
-        newObject = false;
+        if (str1.length === 2) {
+          planetName = str1[0];
+          newObject = false;
+
+          if (str1[1] !== 'Planet' || str1[1] !== 'Moon') {
+            const symbol = str1[1].split(',');
+
+            resource = findResource(symbol[0]);
+
+            resources.push('RESOURCE.' + resource);
+          }
+        } else if (str1.length === 3) {
+          planetName = planetName + ' ' + str1[0];
+
+          const symbol = str1[1].split(',');
+          resource = findResource(symbol[1]);
+
+          if (resource) {
+            resources.push('RESOURCE.' + resource);
+          }
+
+          if (str1[2] === 'Planet') {
+            planetName = "'" + planetName.toLowerCase() + "'";
+
+            const planetObject = {
+              name: planetName,
+              resources,
+              moons: [],
+            };
+
+            planetIndex++;
+            planetName = '';
+            resources = [];
+
+            planets.push(planetObject);
+          }
+
+          if (str1[2] === 'Moon') {
+            planetName = "'" + planetName.toLowerCase() + "'";
+
+            const moonObject = {
+              name: planetName,
+              resources,
+            };
+
+            planetName = '';
+            resources = [];
+
+            planets[planetIndex].moons.push(moonObject);
+          }
+
+          newObject = true;
+        } else {
+          planetName = item;
+          newObject = false;
+        }
 
         return;
       }
-
-      const str1 = item.split('\t');
 
       if (str1.length === 3) {
         planetName = planetName + ' ' + str1[0];
@@ -195,10 +249,11 @@ function Parser() {
         gap: '20px',
         justifyContent: 'center',
         marginTop: '20px',
-      }}>
+      }}
+    >
       <input type="text" value={inputText} onChange={changeText}></input>
       <button onClick={parseString}>Parse</button>
-      <button onClick={clearText}>Reset</button>
+      <button onClick={clearText}>Clear</button>
     </div>
   );
 }
