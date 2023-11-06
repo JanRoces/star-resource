@@ -4002,9 +4002,932 @@ const LEVEL_65_SYSTEMS = [
   },
 ];
 
+const LEVEL_70_SYSTEMS = [
+  {
+    name: 'algorab',
+    level: '70',
+    planets: [
+      {
+        name: 'algorab i',
+        resources: [RESOURCE.LEAD, RESOURCE.URANIUM, RESOURCE.IRIDIUM],
+        moons: [],
+      },
+      {
+        name: 'algorab ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.ARGON,
+          RESOURCE.LITHIUM,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [],
+      },
+      {
+        name: 'algorab iii',
+        resources: [],
+        moons: [
+          {
+            name: 'algorab iii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.URANIUM,
+              RESOURCE.ARGON,
+            ],
+          },
+          {
+            name: 'algorab iii-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.ALKANES,
+              RESOURCE.CARBOXYLIC_ACIDS,
+            ],
+          },
+          {
+            name: 'algorab iii-c',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: 'algorab iii-d',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE],
+          },
+          {
+            name: 'algorab iii-e',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.LITHIUM],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'bardeen',
+    level: '70',
+    planets: [
+      {
+        name: 'bardeen i',
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.COBALT,
+          RESOURCE.TANTALUM,
+        ],
+        moons: [
+          {
+            name: 'bardeen i-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.IRON,
+              RESOURCE.TANTALUM,
+              RESOURCE.YTTERBIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'bardeen ii',
+        resources: [
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ALKANES,
+          RESOURCE.SILVER,
+          RESOURCE.TANTALUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'bardeen iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.COBALT,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [
+          {
+            name: 'bardeen iii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: 'bardeen iii-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'bardeen iv',
+        resources: [],
+        moons: [
+          {
+            name: 'bardeen iv-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.LITHIUM,
+              RESOURCE.CAESIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'bardeen v',
+        resources: [],
+        moons: [
+          {
+            name: 'bardeen v-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: 'bardeen v-b',
+            resources: [
+              RESOURCE.CHLORINE,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.ALKANES,
+              RESOURCE.IRIDIUM,
+              RESOURCE.TANTALUM,
+            ],
+          },
+          {
+            name: 'bardeen v-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.COBALT,
+              RESOURCE.PLATINUM,
+              RESOURCE.XENON,
+            ],
+          },
+          {
+            name: 'bardeen v-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.COPPER,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.IRIDIUM,
+              RESOURCE.TANTALUM,
+            ],
+          },
+          {
+            name: 'bardeen v-e',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.TITANIUM],
+          },
+          {
+            name: 'bardeen v-f',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL],
+          },
+        ],
+      },
+      {
+        name: 'bardeen vi',
+        resources: [RESOURCE.WATER, RESOURCE.COPPER],
+        moons: [
+          {
+            name: 'bardeen vi-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ARGON,
+              RESOURCE.CARBOXYLIC_ACIDS,
+            ],
+          },
+          {
+            name: 'bardeen vi-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.TETRAFLUORIDES,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'bardeen vii',
+        resources: [],
+        moons: [
+          {
+            name: 'bardeen vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ARGON,
+              RESOURCE.CARBOXYLIC_ACIDS,
+              RESOURCE.NEON,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'celebrai',
+    level: '70',
+    planets: [
+      {
+        name: 'celebrai i',
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.ALKANES,
+          RESOURCE.TANTALUM,
+          RESOURCE.YTTERBIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'celebrai ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.ALKANES,
+          RESOURCE.GOLD,
+        ],
+        moons: [],
+      },
+      {
+        name: 'celebrai iii',
+        resources: [],
+        moons: [
+          {
+            name: 'celebrai iii-a',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.NEON],
+          },
+          {
+            name: 'celebrai iii-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'celebrai iii-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.ARGON,
+              RESOURCE.BENZENE,
+              RESOURCE.NEON,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'celebrai iv',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [],
+      },
+    ],
+  },
+  {
+    name: 'marduk',
+    level: '70',
+    planets: [
+      {
+        name: 'marduk i',
+        resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.NICKEL],
+        moons: [
+          {
+            name: 'marduk i-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: 'marduk ii',
+        resources: [
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.COBALT,
+          RESOURCE.PLATINUM,
+          RESOURCE.VANADIUM,
+          RESOURCE.PALLADIUM,
+          RESOURCE.PLUTONIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'marduk iii',
+        resources: [
+          RESOURCE.CHLORINE,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+        ],
+        moons: [
+          {
+            name: 'marduk iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'marduk iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.CARBOXYLIC_ACIDS,
+        ],
+        moons: [],
+      },
+      {
+        name: 'marduk v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.COBALT,
+        ],
+        moons: [
+          {
+            name: 'marduk v-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.EUROPIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'marduk vi',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.FLUORINE,
+          RESOURCE.COBALT,
+          RESOURCE.GOLD,
+          RESOURCE.CAESIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'marduk vii',
+        resources: [],
+        moons: [
+          {
+            name: 'marduk vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.GOLD,
+            ],
+          },
+          {
+            name: 'marduk vii-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+          },
+          {
+            name: 'marduk vii-c',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON, RESOURCE.NEON],
+          },
+          {
+            name: 'marduk vii-d',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+      {
+        name: 'marduk viii',
+        resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.TETRAFLUORIDES],
+        moons: [],
+      },
+      {
+        name: 'marduk ix',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.NICKEL,
+          RESOURCE.COBALT,
+          RESOURCE.PLATINUM,
+        ],
+        moons: [
+          {
+            name: 'marduk ix-a',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.PLATINUM],
+          },
+          {
+            name: 'marduk ix-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.NICKEL,
+              RESOURCE.COBALT,
+              RESOURCE.PLATINUM,
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'pyrass',
+    level: '70',
+    planets: [
+      {
+        name: 'pyraas i',
+        resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM, RESOURCE.BERYLLIUM],
+        moons: [],
+      },
+      {
+        name: 'pyraas ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.IRIDIUM,
+          RESOURCE.TITANIUM,
+        ],
+        moons: [
+          {
+            name: 'pyraas ii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'pyraas iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.COBALT,
+          RESOURCE.VANADIUM,
+          RESOURCE.CAESIUM,
+        ],
+        moons: [
+          {
+            name: 'pyraas iii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+          {
+            name: 'pyraas iii-b',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+        ],
+      },
+      {
+        name: 'pyraas iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.CHLOROSILANES,
+          RESOURCE.ALKANES,
+          RESOURCE.PLATINUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'pyraas v',
+        resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.LEAD],
+        moons: [],
+      },
+      {
+        name: 'pyraas vi',
+        resources: [],
+        moons: [
+          {
+            name: 'pyraas vi-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.URANIUM,
+              RESOURCE.ALKANES,
+              RESOURCE.IRIDIUM,
+              RESOURCE.LITHIUM,
+            ],
+          },
+          {
+            name: 'pyraas vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.NICKEL, RESOURCE.COBALT],
+          },
+          {
+            name: 'pyraas vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+          {
+            name: 'pyraas vi-d',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD],
+          },
+        ],
+      },
+      {
+        name: 'pyraas vii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.FLUORINE,
+          RESOURCE.ALKANES,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [
+          {
+            name: 'pyraas vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.FLUORINE,
+              RESOURCE.IONIC_LIQUIDS,
+            ],
+          },
+          {
+            name: 'pyraas vii-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.ARGON,
+              RESOURCE.CHLOROSILANES,
+              RESOURCE.LITHIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'pyraas viii',
+        resources: [],
+        moons: [
+          {
+            name: 'pyraas viii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.CHLORINE,
+              RESOURCE.NICKEL,
+              RESOURCE.IRON,
+              RESOURCE.LEAD,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: 'pyraas viii-b',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NEODYMIUM,
+            ],
+          },
+          {
+            name: 'pyraas viii-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.GOLD],
+          },
+          {
+            name: 'pyraas viii-d',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'strix',
+    level: '70',
+    planets: [
+      {
+        name: 'strix i',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.HELIUM_3,
+          RESOURCE.ALUMINUM,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.URANIUM,
+          RESOURCE.BERYLLIUM,
+          RESOURCE.ALKANES,
+        ],
+        moons: [
+          {
+            name: 'strix i-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'strix ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.FLUORINE,
+        ],
+        moons: [],
+      },
+      {
+        name: 'strix iii',
+        resources: [],
+        moons: [
+          {
+            name: 'strix iii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.COBALT,
+              RESOURCE.SILVER,
+            ],
+          },
+          {
+            name: 'strix iii-b',
+            resources: [RESOURCE.WATER, RESOURCE.LEAD, RESOURCE.DYSPROSIUM],
+          },
+          {
+            name: 'strix iii-c',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.URANIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.COBALT,
+              RESOURCE.IRIDIUM,
+              RESOURCE.PALLADIUM,
+            ],
+          },
+          {
+            name: 'strix iii-d',
+            resources: [RESOURCE.WATER, RESOURCE.ARGON],
+          },
+        ],
+      },
+      {
+        name: 'strix iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.LEAD,
+          RESOURCE.FLUORINE,
+          RESOURCE.COBALT,
+          RESOURCE.GOLD,
+          RESOURCE.MERCURY,
+        ],
+        moons: [
+          {
+            name: 'strix iv-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'strix v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.IRIDIUM,
+          RESOURCE.LITHIUM,
+          RESOURCE.XENON,
+        ],
+        moons: [],
+      },
+      {
+        name: 'strix vi',
+        resources: [],
+        moons: [
+          {
+            name: 'strix vi-a',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+          {
+            name: 'strix vi-b',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: 'strix vi-c',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'verne',
+    level: '70',
+    planets: [
+      {
+        name: 'verne i',
+        resources: [
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.IRIDIUM,
+          RESOURCE.PLUTONIUM,
+          RESOURCE.NEON,
+          RESOURCE.VERYL,
+        ],
+        moons: [
+          {
+            name: 'verne i-a',
+            resources: [],
+          },
+        ],
+      },
+      {
+        name: 'verne ii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.CHLORINE,
+          RESOURCE.LEAD,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.TUNGSTEN,
+          RESOURCE.TITANIUM,
+        ],
+        moons: [
+          {
+            name: 'verne ii-a',
+            resources: [
+              RESOURCE.HELIUM_3,
+              RESOURCE.ALUMINUM,
+              RESOURCE.BERYLLIUM,
+            ],
+          },
+        ],
+      },
+      {
+        name: 'verne iii',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.COPPER,
+          RESOURCE.NICKEL,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.IRIDIUM,
+          RESOURCE.PALLADIUM,
+        ],
+        moons: [
+          {
+            name: 'verne iii-a',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.IRON],
+          },
+        ],
+      },
+      {
+        name: 'verne iv',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.ARGON,
+          RESOURCE.BENZENE,
+          RESOURCE.SILVER,
+          RESOURCE.IRIDIUM,
+          RESOURCE.VANADIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'verne v',
+        resources: [
+          RESOURCE.WATER,
+          RESOURCE.IRON,
+          RESOURCE.LEAD,
+          RESOURCE.URANIUM,
+          RESOURCE.VANADIUM,
+          RESOURCE.MERCURY,
+          RESOURCE.YTTERBIUM,
+        ],
+        moons: [],
+      },
+      {
+        name: 'verne vi',
+        resources: [],
+        moons: [
+          {
+            name: 'verne vi-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.FLUORINE,
+              RESOURCE.SILVER,
+              RESOURCE.PLATINUM,
+            ],
+          },
+          {
+            name: 'verne vi-b',
+            resources: [RESOURCE.WATER, RESOURCE.COPPER, RESOURCE.FLUORINE],
+          },
+        ],
+      },
+      {
+        name: 'verne vii',
+        resources: [],
+        moons: [
+          {
+            name: 'verne vii-a',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.CHLORINE,
+              RESOURCE.CHLOROSILANES,
+            ],
+          },
+          {
+            name: 'verne vii-b',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.LITHIUM],
+          },
+          {
+            name: 'verne vii-c',
+            resources: [RESOURCE.HELIUM_3, RESOURCE.ALUMINUM],
+          },
+          {
+            name: 'verne vii-d',
+            resources: [
+              RESOURCE.WATER,
+              RESOURCE.COPPER,
+              RESOURCE.NICKEL,
+              RESOURCE.LEAD,
+              RESOURCE.URANIUM,
+              RESOURCE.FLUORINE,
+              RESOURCE.SILVER,
+              RESOURCE.MERCURY,
+            ],
+          },
+          {
+            name: 'verne vii-e',
+            resources: [RESOURCE.WATER, RESOURCE.CHLORINE, RESOURCE.LITHIUM],
+          },
+        ],
+      },
+    ],
+  },
+];
+
 export const HIGH_TIER_SYSTEMS = [
   ...LEVEL_50_SYSTEMS,
   ...LEVEL_55_SYSTEMS,
   ...LEVEL_60_SYSTEMS,
   ...LEVEL_65_SYSTEMS,
+  ...LEVEL_70_SYSTEMS,
 ];
