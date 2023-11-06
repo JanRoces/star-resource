@@ -5,6 +5,7 @@
 }
 
 .number-container {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   min-width: 20px;

@@ -1,4 +1,4 @@
-import "../styles/Resource.css";
+import '../styles/Resource.css';
 
 function Resource({
   backgroundColor,
@@ -10,7 +10,7 @@ function Resource({
   onStopHover,
   onSelectResource,
 }) {
-  const id = selectable ? name : "";
+  const id = selectable ? name : '';
 
   function clickResource() {
     if (!selectable) {
@@ -53,7 +53,10 @@ function Resource({
     <div
       id={id}
       className="resource-container"
-      style={{ backgroundColor: backgroundColor }}
+      style={{
+        backgroundColor: backgroundColor,
+        cursor: selectable ? 'pointer' : 'auto',
+      }}
       onClick={() => clickResource(name)}
       onMouseEnter={() => hoverOverResource(name)}
       onMouseLeave={() => clearResource()}

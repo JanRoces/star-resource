@@ -1,4 +1,4 @@
-import "../styles/ResourceSelect.css";
+import '../styles/ResourceSelect.css';
 import {
   COMMON_RESOURCES,
   EXOTIC_RESOURCES,
@@ -6,9 +6,9 @@ import {
   RARE_RESOURCES,
   UNCOMMON_RESOURCES,
   UNIQUE_RESOURCES,
-} from "../utils/resources";
-import Resource from "./Resource";
-import Number from "./Number";
+} from '../utils/resources';
+import Resource from './Resource';
+import Number from './Number';
 
 function ResourceSelect({
   filters,
@@ -19,40 +19,40 @@ function ResourceSelect({
 }) {
   const resourceGroups = [
     {
-      name: "row 1",
+      name: 'row 1',
       resourceGroup: [
         {
-          title: "Common",
+          title: 'Common',
           resources: COMMON_RESOURCES,
         },
         {
-          title: "Uncommon",
+          title: 'Uncommon',
           resources: UNCOMMON_RESOURCES,
         },
       ],
     },
     {
-      name: "row 2",
+      name: 'row 2',
       resourceGroup: [
         {
-          title: "Rare",
+          title: 'Rare',
           resources: RARE_RESOURCES,
         },
         {
-          title: "Exotic",
+          title: 'Exotic',
           resources: EXOTIC_RESOURCES,
         },
       ],
     },
     {
-      name: "row 3",
+      name: 'row 3',
       resourceGroup: [
         {
-          title: "Unique",
+          title: 'Unique',
           resources: UNIQUE_RESOURCES,
         },
         {
-          title: "Levels",
+          title: 'Levels',
           resources: LEVELS,
         },
       ],
@@ -98,17 +98,19 @@ function ResourceSelect({
   }
 
   function clearHoverSelection(name) {
-    setSelection("");
+    setSelection('');
   }
 
   function renderResources({ title, resources }) {
     const items =
-      title === "Levels"
+      title === 'Levels'
         ? resources.map((level) => {
             return (
               <Number
                 key={level.digit}
                 onSelectLevel={selectLevel}
+                onHover={hoverSelection}
+                onStopHover={clearHoverSelection}
                 {...level}
               />
             );
