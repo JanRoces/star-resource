@@ -50,8 +50,7 @@ function Table({ filters, levels }) {
         <div
           className="label-container"
           key={index}
-          style={{ flex: item.flex }}
-        >
+          style={{ flex: item.flex }}>
           <span className="label">{formatName(item.label)}</span>
         </div>
       );
@@ -87,8 +86,7 @@ function Table({ filters, levels }) {
       <div
         className="row-container"
         key={systemName + '-' + planetName}
-        style={{ backgroundColor: rowColor }}
-      >
+        style={{ backgroundColor: rowColor }}>
         <div className="column-container">
           <span>{level}</span>
         </div>
@@ -112,22 +110,16 @@ function Table({ filters, levels }) {
   }
 
   function renderFilteredRows() {
-    let starSystems;
-
-    if (levels.length) {
-      starSystems = ALL_STAR_SYSTEMS.filter((system) =>
-        levels.includes(system.level)
-      );
-    }
+    const starSystems = levels.length
+      ? ALL_STAR_SYSTEMS.filter((system) => levels.includes(system.level))
+      : ALL_STAR_SYSTEMS;
 
     if (!filters.length) {
       return renderAllRows(starSystems);
     }
 
-    starSystems = starSystems || ALL_STAR_SYSTEMS;
-
-    const rows = starSystems.flatMap((system) => {
-      return system.planets.flatMap((planet) => {
+    const rows = starSystems.reduce((acc, system) => {
+      system.planets.forEach((planet) => {
         const planetRow = planet.resources.some((resource) =>
           filters.includes(resource.name)
         )
@@ -142,27 +134,97 @@ function Table({ filters, levels }) {
             })
           : null;
 
-        const moonRows = planet.moons
-          .filter((moon) =>
+        const moonRows = planet.moons.reduce((moonAcc, moon) => {
+          if (
             moon.resources.some((resource) => filters.includes(resource.name))
-          )
-          .map((moon) => {
-            return renderRow({
+          ) {
+            moonAcc.push(
+              renderRow({
+                level: system.level,
+                systemName: system.name,
+                planetName: moon.name,
+                type: planetType.moon,
+                mainPlanet: planet.name,
+                resources: moon.resources,
+                alternateColor: alternate,
+              })
+            );
+          }
+          return moonAcc;
+        }, []);
+
+        if (planetRow) {
+          acc.push(planetRow);
+        }
+
+        acc.push(...moonRows);
+      });
+
+      return acc;
+    }, []);
+
+    return rows;
+  }
+
+  function renderFilteredRowsStrict() {
+    const starSystems = levels.length
+      ? ALL_STAR_SYSTEMS.filter((system) => levels.includes(system.level))
+      : ALL_STAR_SYSTEMS;
+
+    if (!filters.length) {
+      return renderAllRows(starSystems);
+    }
+
+    const rows = starSystems.reduce((acc, system) => {
+      system.planets.forEach((planet) => {
+        const hasAllResources = filters.every((filter) =>
+          planet.resources.some((resource) => resource.name === filter)
+        );
+
+        const planetRow = hasAllResources
+          ? renderRow({
               level: system.level,
               systemName: system.name,
-              planetName: moon.name,
-              type: planetType.moon,
-              mainPlanet: planet.name,
-              resources: moon.resources,
+              planetName: planet.name,
+              type: planetType.planet,
+              mainPlanet: '',
+              resources: planet.resources,
               alternateColor: alternate,
-            });
-          });
+            })
+          : null;
 
-        return [planetRow, ...moonRows];
+        const moonRows = planet.moons.reduce((moonAcc, moon) => {
+          const moonHasAllResources = filters.every((filter) =>
+            moon.resources.some((resource) => resource.name === filter)
+          );
+
+          if (moonHasAllResources) {
+            moonAcc.push(
+              renderRow({
+                level: system.level,
+                systemName: system.name,
+                planetName: moon.name,
+                type: planetType.moon,
+                mainPlanet: planet.name,
+                resources: moon.resources,
+                alternateColor: alternate,
+              })
+            );
+          }
+          return moonAcc;
+        }, []);
+
+        if (planetRow) {
+          acc.push(planetRow);
+        }
+
+        acc.push(...moonRows);
       });
-    });
 
-    return rows.filter((row) => row !== null);
+      return acc;
+    }, []);
+
+    return rows;
   }
 
   function renderAllRows(starSystems = ALL_STAR_SYSTEMS) {
@@ -200,7 +262,9 @@ function Table({ filters, levels }) {
   return (
     <div className="table-container">
       {renderHeader()}
-      {filters.length || levels.length ? renderFilteredRows() : renderAllRows()}
+      {filters.length || levels.length
+        ? renderFilteredRowsStrict()
+        : renderAllRows()}
     </div>
   );
 }

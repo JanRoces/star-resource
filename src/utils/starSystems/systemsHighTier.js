@@ -5655,7 +5655,7 @@ const LEVEL_75_SYSTEMS = [
               RESOURCE.URANIUM,
               RESOURCE.COBALT,
               RESOURCE.IRIDIUM,
-              RESOURCE.TITANIUM,
+              RESOURCE.TASINE,
             ],
           },
           {
